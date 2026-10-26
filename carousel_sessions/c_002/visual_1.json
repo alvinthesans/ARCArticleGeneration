@@ -1,0 +1,31 @@
+{
+    "positive_prompt": "medium: editorial photography scene_description: e_01 Element Indication for scene_description: e_01: A quiet morning room with soft natural light coming through a large window, wooden floorboards, and a white curtain fluttering gently in the breeze. The space is calm and uncluttered, with a sense of stillness and warmth. change of state for the element in slide: A quiet morning room with soft natural light coming through a large window, wooden floorboards, and a white curtain fluttering gently in the breeze. The space is calm and uncluttered, with a sense of stillness and warmth. Slide element e_01: A quiet morning room with soft natural light coming through a large window, wooden floorboards, and a white curtain fluttering gently in the breeze. The space is calm and uncluttered, with a sense of stillness and warmth.  Optional aesthetic to include for visual enhancement: No optional element to select from  Composition and stage direction: composition:  subject_position: center focal_point: center text_safe_area: left negative_space: left subject_scale: medium framing: wide  shot_type: wide shot",
+    "negative_prompt": "blurry imagery, bad anatomy, over-complicated, cold color tones, harsh shadows, cluttered background, distracting elements, excessive grain, noisy, low resolution, poorly lit, oversaturated, digital artifacts, unrealistic textures, messy composition, amateur photography, dramatic high contrast, busy patterns",
+    "overall_visual": "camera settings: 35mm documentary photography, 50mm lens lighting: soft natural light, warm tones color palette: warm cream neutrals, muted charcoal, soft gray, subtle natural earthy tones mood: quiet and reflective composition interpretation: minimal, clean composition with generous negative space",
+    "image_composition": "Composition and stage direction: composition:  subject_position: center focal_point: center text_safe_area: left negative_space: left subject_scale: medium framing: wide  shot_type: wide shot",
+    "width": 768,
+    "height": 960,
+    "seed": 4102145480,
+    "metadata": {
+        "carousel_id": "c_002",
+        "slide_id": 1,
+        "element": [
+            [
+                "e_01"
+            ],
+            []
+        ],
+        "element_used": [
+            "e_01: A quiet morning room with soft natural light coming through a large window, wooden floorboards, and a white curtain fluttering gently in the breeze. The space is calm and uncluttered, with a sense of stillness and warmth. change of state for the element in slide: A quiet morning room with soft natural light coming through a large window, wooden floorboards, and a white curtain fluttering gently in the breeze. The space is calm and uncluttered, with a sense of stillness and warmth."
+        ],
+        "element_optional": [],
+        "slide_element": [
+            {
+                "objectID": "e_01",
+                "objectType": "environment",
+                "description": "A quiet morning room with soft natural light coming through a large window, wooden floorboards, and a white curtain fluttering gently in the breeze. The space is calm and uncluttered, with a sense of stillness and warmth."
+            }
+        ],
+        "layout": "hero"
+    }
+}

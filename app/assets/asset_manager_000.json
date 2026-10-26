@@ -1,0 +1,118 @@
+{
+    "nature": [
+        {
+            "carousel_id": "c_001",
+            "object_id": "e_01",
+            "object_name": "forest with tall trees and filtered sunlight",
+            "object_type": "nature",
+            "description": " A quiet forest with tall trees and soft natural light filtering through the canopy, creating a serene and peaceful atmosphere. change of state for the element in slide: Tall trees with soft natural light filtering through the canopy, creating a peaceful atmosphere.",
+            "image_width": 768,
+            "image_height": 960,
+            "asset_path": "D:\\ProgramData\\ARCArticleGeneration\\app\\assets\\nature\\forest with tall trees and filtered sunlight.png"
+        },
+        {
+            "carousel_id": "c_001",
+            "object_id": "o_02",
+            "object_name": "cluster of wildflowers",
+            "object_type": "nature",
+            "description": " A cluster of wildflowers with soft colors and natural arrangement, growing in a meadow or forest floor. change of state for the element in slide: A cluster of wildflowers growing at the base of the stone, with soft natural light casting long shadows.",
+            "image_width": 326,
+            "image_height": 575,
+            "asset_path": "D:\\ProgramData\\ARCArticleGeneration\\app\\assets\\nature\\cluster of wildflowers.png"
+        },
+        {
+            "carousel_id": "c_001",
+            "object_id": "se_01",
+            "object_name": "forest with tall trees and filtered sunlight",
+            "object_type": "nature",
+            "description": "A quiet forest with tall trees and soft natural light filtering through the canopy, creating a serene and peaceful atmosphere.",
+            "image_width": 768,
+            "image_height": 960,
+            "asset_path": "D:\\ProgramData\\ARCArticleGeneration\\app\\assets\\nature\\forest with tall trees and filtered sunlight_1.png"
+        },
+        {
+            "carousel_id": "c_001",
+            "object_id": "o_02",
+            "object_name": "cluster of wildflowers",
+            "object_type": "nature",
+            "description": " A cluster of wildflowers with soft colors and natural arrangement, growing in a meadow or forest floor. change of state for the element in slide: A cluster of wildflowers growing at the base of the stone, with soft natural light casting long shadows.",
+            "image_width": 615,
+            "image_height": 244,
+            "asset_path": "D:\\ProgramData\\ARCArticleGeneration\\app\\assets\\nature\\cluster of wildflowers_1.png"
+        },
+        {
+            "carousel_id": "c_001",
+            "object_id": "o_02",
+            "object_name": "cluster of wildflowers",
+            "object_type": "nature",
+            "description": " A cluster of wildflowers with soft colors and natural arrangement, growing in a meadow or forest floor. change of state for the element in slide: A cluster of wildflowers growing at the base of the stone, with soft natural light casting long shadows.",
+            "image_width": 768,
+            "image_height": 460,
+            "asset_path": "D:\\ProgramData\\ARCArticleGeneration\\app\\assets\\nature\\cluster of wildflowers_2.png"
+        }
+    ],
+    "indoor": [
+        {
+            "carousel_id": "c_001",
+            "object_id": "o_01",
+            "object_name": "smooth natural stone",
+            "object_type": "indoor",
+            "description": " A smooth, natural stone with subtle textures and patterns, placed in a natural setting. change of state for the element in slide: A smooth, natural stone placed in the center of the frame, surrounded by soft shadows.",
+            "image_width": 369,
+            "image_height": 228,
+            "asset_path": "D:\\ProgramData\\ARCArticleGeneration\\app\\assets\\indoor\\smooth natural stone.png"
+        },
+        {
+            "carousel_id": "c_001",
+            "object_id": "so_01",
+            "object_name": "smooth natural stone",
+            "object_type": "indoor",
+            "description": "A smooth, natural stone with subtle textures and patterns, placed in a natural setting.",
+            "image_width": 369,
+            "image_height": 228,
+            "asset_path": "D:\\ProgramData\\ARCArticleGeneration\\app\\assets\\indoor\\smooth natural stone_1.png"
+        },
+        {
+            "carousel_id": "c_001",
+            "object_id": "o_01",
+            "object_name": "smooth natural stone",
+            "object_type": "indoor",
+            "description": " A smooth, natural stone with subtle textures and patterns, placed in a natural setting. change of state for the element in slide: A smooth, natural stone placed in the center of the frame, surrounded by soft shadows.",
+            "image_width": 400,
+            "image_height": 244,
+            "asset_path": "D:\\ProgramData\\ARCArticleGeneration\\app\\assets\\indoor\\smooth natural stone_2.png"
+        },
+        {
+            "carousel_id": "c_001",
+            "object_id": "o_01",
+            "object_name": "smooth natural stone",
+            "object_type": "indoor",
+            "description": " A smooth, natural stone with subtle textures and patterns, placed in a natural setting. change of state for the element in slide: A smooth, natural stone placed in the center of the frame, surrounded by soft shadows.",
+            "image_width": 277,
+            "image_height": 192,
+            "asset_path": "D:\\ProgramData\\ARCArticleGeneration\\app\\assets\\indoor\\smooth natural stone_3.png"
+        }
+    ],
+    "artificial": [
+        {
+            "carousel_id": "c_002",
+            "object_id": "o_01",
+            "object_name": "ceramic mug on wooden table",
+            "object_type": "artificial",
+            "description": " A ceramic mug with a simple design, placed on a wooden table. The surface is clean and warm. change of state for the element in slide: placed on the wooden floor, with a small plant next to it.",
+            "image_width": 154,
+            "image_height": 125,
+            "asset_path": "D:\\ProgramData\\ARCArticleGeneration\\app\\assets\\artificial\\ceramic mug on wooden table.png"
+        },
+        {
+            "carousel_id": "c_002",
+            "object_id": "so_01",
+            "object_name": "ceramic mug on wooden table",
+            "object_type": "artificial",
+            "description": "A ceramic mug with a simple design, placed on a wooden table. The surface is clean and warm.",
+            "image_width": 154,
+            "image_height": 125,
+            "asset_path": "D:\\ProgramData\\ARCArticleGeneration\\app\\assets\\artificial\\ceramic mug on wooden table_1.png"
+        }
+    ]
+}

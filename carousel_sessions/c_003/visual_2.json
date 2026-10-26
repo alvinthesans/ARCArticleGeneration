@@ -1,0 +1,40 @@
+{
+    "positive_prompt": "medium: editorial photography         scene_description: e_01 with o_03 and o_05. The ceramic vase with dried lavender and delicate leaves sits on a stone pathway, surrounded by ivy. A single leaf, partially curled, rests on the wooden bench, catching the light.         Element Indication for scene_description:         e_01: A quiet urban courtyard with a stone pathway, small garden, and a wooden bench. The space is enclosed by a low wall with ivy creeping along the surface. The atmosphere is calm and enclosed, with a soft natural light filtering through the greenery. change of state for the element in slide: stone pathway with ivy  o_03: A ceramic flower vase with dried lavender and a few small, delicate leaves. The vase is placed on a shelf, with a soft light casting a warm glow on the arrangement. change of state for the element in slide: ceramic vase with dried lavender  o_05: A single leaf, partially curled, resting on a wooden surface. The leaf is positioned to catch the light, highlighting its texture and the subtle details of its veins. change of state for the element in slide: single leaf on wooden bench         Slide element se_01: stone pathway with ivy  Slide element so_01: ceramic vase with dried lavender and delicate leaves                  Optional aesthetic to include for visual enhancement:         No optional element to select from                  Composition and stage direction:         composition:          subject_position: center         focal_point: center         text_safe_area: top         negative_space: left         subject_scale: medium         framing: tight                  shot_type: medium shot         ",
+    "negative_prompt": "blurry imagery, bad anatomy, over-complicated, cold color tones, distracting elements, cluttered composition, harsh shadows, oversaturation, unnatural lighting, poorly rendered textures, abstract forms, digital noise, grainy, amateur photo, tiling, multiple subjects, out of frame subjects, watermark, signature, text, writing, low contrast, plastic look, artificial appearance.",
+    "overall_visual": "camera settings: 35mm documentary photography, 50mm lens lighting: soft natural light with warm tones color palette: warm cream neutrals, muted charcoal, soft gray, subtle natural earthy tones mood: quiet and reflective composition interpretation: minimal, clean composition with generous negative space",
+    "image_composition": "Composition and stage direction: composition:  subject_position: center focal_point: center text_safe_area: top negative_space: left subject_scale: medium framing: tight  shot_type: medium shot",
+    "width": 768,
+    "height": 960,
+    "seed": 1479574522,
+    "metadata": {
+        "carousel_id": "c_003",
+        "slide_id": 2,
+        "element": [
+            [
+                "e_01",
+                "o_03",
+                "o_05"
+            ],
+            []
+        ],
+        "element_used": [
+            "e_01: A quiet urban courtyard with a stone pathway, small garden, and a wooden bench. The space is enclosed by a low wall with ivy creeping along the surface. The atmosphere is calm and enclosed, with a soft natural light filtering through the greenery. change of state for the element in slide: stone pathway with ivy",
+            "o_03: A ceramic flower vase with dried lavender and a few small, delicate leaves. The vase is placed on a shelf, with a soft light casting a warm glow on the arrangement. change of state for the element in slide: ceramic vase with dried lavender",
+            "o_05: A single leaf, partially curled, resting on a wooden surface. The leaf is positioned to catch the light, highlighting its texture and the subtle details of its veins. change of state for the element in slide: single leaf on wooden bench"
+        ],
+        "element_optional": [],
+        "slide_element": [
+            {
+                "objectID": "se_01",
+                "objectType": "environment",
+                "description": "stone pathway with ivy"
+            },
+            {
+                "objectID": "so_01",
+                "objectType": "object",
+                "description": "ceramic vase with dried lavender and delicate leaves"
+            }
+        ],
+        "layout": "split"
+    }
+}

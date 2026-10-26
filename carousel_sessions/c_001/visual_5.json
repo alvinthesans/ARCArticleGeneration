@@ -1,0 +1,40 @@
+{
+    "positive_prompt": "medium: editorial photography         scene_description: e_02, o_01, o_02         Element Indication for scene_description:         e_02: A tranquil valley surrounded by mountains, with a calm lake reflecting the sky and surrounding landscape. change of state for the element in slide: A tranquil valley surrounded by mountains, with a calm lake reflecting the sky and surrounding landscape.  o_01: A smooth, natural stone with subtle textures and patterns, placed in a natural setting. change of state for the element in slide: A smooth, natural stone placed in the center of the frame, surrounded by soft shadows.  o_02: A cluster of wildflowers with soft colors and natural arrangement, growing in a meadow or forest floor. change of state for the element in slide: A cluster of wildflowers growing at the base of the stone, with soft natural light casting long shadows.         Slide element se_05: A tranquil valley surrounded by mountains, with a calm lake reflecting the sky and surrounding landscape.  Slide element so_05: A smooth, natural stone with subtle textures and patterns, placed in a natural setting.                  Optional aesthetic to include for visual enhancement:         No optional element to select from                  Composition and stage direction:         composition:          subject_position: left_third         focal_point: bottom         text_safe_area: left         negative_space: left         subject_scale: medium         framing: medium                  shot_type: medium angle         ",
+    "negative_prompt": "blurry imagery, bad anatomy, over-complicated, overly cold color palette, harsh lighting, oversaturation, unrealistic textures, digital noise, artifacts, poorly rendered water reflection, distorted stone texture, unnatural flower shapes, cluttered composition, abstract, tiling, cropped, watermark, signature, low resolution, amateur photo, cartoon, illustration, painting",
+    "overall_visual": "camera settings: 35mm documentary photography, 50mm lens lighting: soft natural light with subtle shadows color palette: warm cream neutrals, muted charcoal, soft gray, subtle natural earthy tones mood: quiet and reflective composition interpretation: minimal, clean composition with generous negative space",
+    "image_composition": "Composition and stage direction: composition:  subject_position: left_third focal_point: bottom text_safe_area: left negative_space: left subject_scale: medium framing: medium  shot_type: medium angle",
+    "width": 768,
+    "height": 960,
+    "seed": 2273073056,
+    "metadata": {
+        "carousel_id": "c_001",
+        "slide_id": 5,
+        "element": [
+            [
+                "e_02",
+                "o_01",
+                "o_02"
+            ],
+            []
+        ],
+        "element_used": [
+            "e_02: A tranquil valley surrounded by mountains, with a calm lake reflecting the sky and surrounding landscape. change of state for the element in slide: A tranquil valley surrounded by mountains, with a calm lake reflecting the sky and surrounding landscape.",
+            "o_01: A smooth, natural stone with subtle textures and patterns, placed in a natural setting. change of state for the element in slide: A smooth, natural stone placed in the center of the frame, surrounded by soft shadows.",
+            "o_02: A cluster of wildflowers with soft colors and natural arrangement, growing in a meadow or forest floor. change of state for the element in slide: A cluster of wildflowers growing at the base of the stone, with soft natural light casting long shadows."
+        ],
+        "element_optional": [],
+        "slide_element": [
+            {
+                "objectID": "se_05",
+                "objectType": "environment",
+                "description": "A tranquil valley surrounded by mountains, with a calm lake reflecting the sky and surrounding landscape."
+            },
+            {
+                "objectID": "so_05",
+                "objectType": "object",
+                "description": "A smooth, natural stone with subtle textures and patterns, placed in a natural setting."
+            }
+        ],
+        "layout": "split"
+    }
+}

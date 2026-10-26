@@ -1,0 +1,38 @@
+{
+    "positive_prompt": "medium: editorial photography         scene_description: e_04, o_03         Element Indication for scene_description:         e_04: A quiet coastal area with smooth waves rolling onto the shore and a clear, calm sea reflecting the sky. change of state for the element in slide: Dominant on the left side, with waves extending upward  o_03: A small, natural rock formation with unique shapes and textures, found in a stream or mountain area. change of state for the element in slide: Positioned on the right side, with unique shapes extending toward the water         Slide element se_04: A quiet coastal area with smooth waves rolling onto the shore and a clear, calm sea reflecting the sky.  Slide element so_04: A small, natural rock formation with unique shapes and textures, found in a stream or mountain area.                  Optional aesthetic to include for visual enhancement:         No optional element to select from                  Composition and stage direction:         composition:          subject_position: left         focal_point: center         text_safe_area: top         negative_space: right         subject_scale: medium         framing: documentary                  shot_type: wide-angle         ",
+    "negative_prompt": "blurry imagery, bad anatomy, over-complicated, overly cold color tones, harsh shadows, dramatic contrast, unnatural lighting, digital noise, grainy, amateur photo, oversaturated, mutated, deformed, extra limbs, missing limbs, poorly drawn, abstract, cartoon, illustration, painting, watermark, signature, text, writing, low resolution, jpeg artifacts, tiling, unrealistic textures",
+    "overall_visual": "camera settings: 35mm documentary photography, 50mm lens lighting: soft natural light with subtle shadows color palette: warm cream neutrals, muted charcoal, soft gray, subtle natural earthy tones mood: quiet and reflective composition interpretation: minimal, clean composition with generous negative space",
+    "image_composition": "Composition and stage direction: composition:  subject_position: left focal_point: center text_safe_area: top negative_space: right subject_scale: medium framing: documentary  shot_type: wide-angle",
+    "width": 768,
+    "height": 960,
+    "seed": 375527098,
+    "metadata": {
+        "carousel_id": "c_001",
+        "slide_id": 4,
+        "element": [
+            [
+                "e_04",
+                "o_03"
+            ],
+            []
+        ],
+        "element_used": [
+            "e_04: A quiet coastal area with smooth waves rolling onto the shore and a clear, calm sea reflecting the sky. change of state for the element in slide: Dominant on the left side, with waves extending upward",
+            "o_03: A small, natural rock formation with unique shapes and textures, found in a stream or mountain area. change of state for the element in slide: Positioned on the right side, with unique shapes extending toward the water"
+        ],
+        "element_optional": [],
+        "slide_element": [
+            {
+                "objectID": "se_04",
+                "objectType": "environment",
+                "description": "A quiet coastal area with smooth waves rolling onto the shore and a clear, calm sea reflecting the sky."
+            },
+            {
+                "objectID": "so_04",
+                "objectType": "object",
+                "description": "A small, natural rock formation with unique shapes and textures, found in a stream or mountain area."
+            }
+        ],
+        "layout": "split"
+    }
+}

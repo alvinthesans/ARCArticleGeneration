@@ -1,0 +1,498 @@
+{
+    "carousel": {
+        "title": "慢下來，才能看見生活",
+        "langauge": "zh-HK",
+        "style": "minimal_editorial",
+        "visual_bible": {
+            "element_list": [
+                {
+                    "elementID": "e_01",
+                    "elementType": "environment",
+                    "description": "A quiet urban courtyard with a stone pathway, small garden, and a wooden bench. The space is enclosed by a low wall with ivy creeping along the surface. The atmosphere is calm and enclosed, with a soft natural light filtering through the greenery.",
+                    "persistence": "preferred"
+                },
+                {
+                    "elementID": "e_02",
+                    "elementType": "environment",
+                    "description": "A sunlit window seat with a view of a quiet street. The window is slightly open, revealing a soft breeze and the gentle movement of leaves outside. The space is warm and inviting, with natural light casting soft shadows.",
+                    "persistence": "preferred"
+                },
+                {
+                    "elementID": "o_01",
+                    "elementType": "object",
+                    "description": "A ceramic mug with a soft glaze, partially filled with warm tea. The mug is placed on a small wooden tray with a pattern of leaves. The texture of the ceramic and the warmth of the tea suggest a moment of stillness.",
+                    "persistence": "preferred"
+                },
+                {
+                    "elementID": "o_02",
+                    "elementType": "object",
+                    "description": "A small wooden table with a soft cloth, a few scattered books, and a single candle. The table is placed in a corner of a room with large windows, allowing natural light to fall across the surface.",
+                    "persistence": "preferred"
+                },
+                {
+                    "elementID": "o_03",
+                    "elementType": "object",
+                    "description": "A ceramic flower vase with dried lavender and a few small, delicate leaves. The vase is placed on a shelf, with a soft light casting a warm glow on the arrangement.",
+                    "persistence": "preferred"
+                },
+                {
+                    "elementID": "o_04",
+                    "elementType": "object",
+                    "description": "A small wooden box with a soft, natural texture, partially open to reveal the inside. Inside, there are a few folded paper notes and a few dried flowers, suggesting a quiet, personal space.",
+                    "persistence": "preferred"
+                },
+                {
+                    "elementID": "o_05",
+                    "elementType": "object",
+                    "description": "A single leaf, partially curled, resting on a wooden surface. The leaf is positioned to catch the light, highlighting its texture and the subtle details of its veins.",
+                    "persistence": "preferred"
+                }
+            ],
+            "medium": "editorial photography",
+            "canvas_width": 768,
+            "canvas_height": 960,
+            "camera": "35mm documentary photography, 50mm lens",
+            "lighting": "soft natural light with warm tones",
+            "color_palette": "warm cream neutrals, muted charcoal, soft gray, subtle natural earthy tones",
+            "mood": "quiet and reflective",
+            "composition_style": "minimal, clean composition with generous negative space",
+            "negative_prompt": "blurry imagery, bad anatomy, over-complicated, cold color being the most"
+        },
+        "slides": [
+            {
+                "slide_id": 1,
+                "purpose": "hook",
+                "headline": "慢下來",
+                "body": "才能看見生活",
+                "visual": {
+                    "visual_role": "hero",
+                    "composition": {
+                        "subject_position": "center",
+                        "focal_point": "center",
+                        "text_safe_area": "left",
+                        "negative_space": "left",
+                        "subject_scale": "medium",
+                        "framing": "wide"
+                    },
+                    "shot_type": "wide shot",
+                    "scene_description": "e_01 contains o_04 and o_05. o_04 sits on the ground, with o_05 resting on its surface.",
+                    "element_usage": [
+                        {
+                            "element_id": "e_01",
+                            "usage": "visible",
+                            "selected_components": [],
+                            "state_description": "quiet courtyard with a low wall and ivy, natural light filtering through the greenery"
+                        },
+                        {
+                            "element_id": "o_04",
+                            "usage": "visible",
+                            "selected_components": [],
+                            "state_description": "wooden box partially open, showing folded paper notes and dried flowers"
+                        },
+                        {
+                            "element_id": "o_05",
+                            "usage": "visible",
+                            "selected_components": [],
+                            "state_description": "single leaf resting on the wooden box, catching natural light"
+                        }
+                    ],
+                    "slide_elements": [
+                        {
+                            "objectID": "e_01",
+                            "objectType": "environment",
+                            "description": "A quiet urban courtyard with a stone pathway, small garden, and a wooden bench. The space is enclosed by a low wall with ivy creeping along the surface. The atmosphere is calm and enclosed, with a soft natural light filtering through the greenery."
+                        },
+                        {
+                            "objectID": "o_04",
+                            "objectType": "object",
+                            "description": "A small wooden box with a soft, natural texture, partially open to reveal the inside. Inside, there are a few folded paper notes and a few dried flowers, suggesting a quiet, personal space."
+                        }
+                    ],
+                    "used_element_ids": [
+                        "e_01",
+                        "o_04",
+                        "o_05"
+                    ],
+                    "get_visible_element_usage": [
+                        "e_01",
+                        "o_04",
+                        "o_05"
+                    ],
+                    "get_optional_element_usage": [],
+                    "get_used_element_ids_with_components": [],
+                    "used_permanent_element_ids": [
+                        "e_01",
+                        "o_04",
+                        "o_05"
+                    ],
+                    "used_slide_element_ids": []
+                },
+                "layout": "hero",
+                "semantic_qa_target": "A quiet courtyard with a low wall and ivy, natural light filtering through the greenery. A small wooden box partially open, showing folded paper notes and dried flowers. A single leaf resting on the wooden box, catching natural light.",
+                "image_path": "D:\\ProgramData\\ARCArticleGeneration\\carousel_sessions\\c_003\\slideImage_01.png"
+            },
+            {
+                "slide_id": 2,
+                "purpose": "example",
+                "headline": "A Moment of Stillness",
+                "body": "In the quiet of the courtyard, a ceramic vase holds dried lavender, its soft gla",
+                "visual": {
+                    "visual_role": "main",
+                    "composition": {
+                        "subject_position": "center",
+                        "focal_point": "center",
+                        "text_safe_area": "top",
+                        "negative_space": "left",
+                        "subject_scale": "medium",
+                        "framing": "tight"
+                    },
+                    "shot_type": "medium shot",
+                    "scene_description": "e_01 with o_03 and o_05. The ceramic vase with dried lavender and delicate leaves sits on a stone pathway, surrounded by ivy. A single leaf, partially curled, rests on the wooden bench, catching the light.",
+                    "element_usage": [
+                        {
+                            "element_id": "e_01",
+                            "usage": "visible",
+                            "selected_components": [],
+                            "state_description": "stone pathway with ivy"
+                        },
+                        {
+                            "element_id": "o_03",
+                            "usage": "visible",
+                            "selected_components": [],
+                            "state_description": "ceramic vase with dried lavender"
+                        },
+                        {
+                            "element_id": "o_05",
+                            "usage": "visible",
+                            "selected_components": [],
+                            "state_description": "single leaf on wooden bench"
+                        }
+                    ],
+                    "slide_elements": [
+                        {
+                            "objectID": "se_01",
+                            "objectType": "environment",
+                            "description": "stone pathway with ivy"
+                        },
+                        {
+                            "objectID": "so_01",
+                            "objectType": "object",
+                            "description": "ceramic vase with dried lavender and delicate leaves"
+                        }
+                    ],
+                    "used_element_ids": [
+                        "e_01",
+                        "o_03",
+                        "o_05"
+                    ],
+                    "get_visible_element_usage": [
+                        "e_01",
+                        "o_03",
+                        "o_05"
+                    ],
+                    "get_optional_element_usage": [],
+                    "get_used_element_ids_with_components": [],
+                    "used_permanent_element_ids": [
+                        "e_01",
+                        "o_03",
+                        "o_05"
+                    ],
+                    "used_slide_element_ids": []
+                },
+                "layout": "split",
+                "semantic_qa_target": "A ceramic vase with dried lavender sits on a stone pathway, surrounded by ivy and a curled leaf catching the light.",
+                "image_path": "D:\\ProgramData\\ARCArticleGeneration\\carousel_sessions\\c_003\\slideImage_02.png"
+            },
+            {
+                "slide_id": 3,
+                "purpose": "context",
+                "headline": "雨後街道",
+                "body": "水滴在石板路上閃閃發光",
+                "visual": {
+                    "visual_role": "statement",
+                    "composition": {
+                        "subject_position": "right_third",
+                        "focal_point": "right_third",
+                        "text_safe_area": "left",
+                        "negative_space": "left",
+                        "subject_scale": "medium",
+                        "framing": "medium"
+                    },
+                    "shot_type": "medium shot",
+                    "scene_description": "e_01 contains o_03 and o_05. o_03 sits on the ground, with o_05 resting on its surface.",
+                    "element_usage": [
+                        {
+                            "element_id": "e_01",
+                            "usage": "visible",
+                            "selected_components": [],
+                            "state_description": "quiet courtyard with a low wall and ivy, natural light filtering through the greenery"
+                        },
+                        {
+                            "element_id": "o_03",
+                            "usage": "visible",
+                            "selected_components": [],
+                            "state_description": "ceramic flower vase with dried lavender and a few small, delicate leaves"
+                        },
+                        {
+                            "element_id": "o_05",
+                            "usage": "visible",
+                            "selected_components": [],
+                            "state_description": "single leaf resting on the ceramic vase, catching natural light"
+                        }
+                    ],
+                    "slide_elements": [
+                        {
+                            "objectID": "e_01",
+                            "objectType": "environment",
+                            "description": "A quiet urban courtyard with a stone pathway, small garden, and a wooden bench. The space is enclosed by a low wall with ivy creeping along the surface. The atmosphere is calm and enclosed, with a soft natural light filtering through the greenery."
+                        },
+                        {
+                            "objectID": "o_03",
+                            "objectType": "object",
+                            "description": "A ceramic flower vase with dried lavender and a few small, delicate leaves. The vase is placed on a shelf, with a soft light casting a warm glow on the arrangement."
+                        }
+                    ],
+                    "used_element_ids": [
+                        "e_01",
+                        "o_03",
+                        "o_05"
+                    ],
+                    "get_visible_element_usage": [
+                        "e_01",
+                        "o_03",
+                        "o_05"
+                    ],
+                    "get_optional_element_usage": [],
+                    "get_used_element_ids_with_components": [],
+                    "used_permanent_element_ids": [
+                        "e_01",
+                        "o_03",
+                        "o_05"
+                    ],
+                    "used_slide_element_ids": []
+                },
+                "layout": "split",
+                "semantic_qa_target": "A quiet courtyard with a low wall and ivy, natural light filtering through the greenery. A ceramic flower vase with dried lavender and a few small, delicate leaves. A single leaf resting on the ceramic vase, catching natural light.",
+                "image_path": "D:\\ProgramData\\ARCArticleGeneration\\carousel_sessions\\c_003\\slideImage_03.png"
+            },
+            {
+                "slide_id": 4,
+                "purpose": "problem",
+                "headline": "樹影斑駁",
+                "body": "陽光透過葉子，形成斑駍光影",
+                "visual": {
+                    "visual_role": "main",
+                    "composition": {
+                        "subject_position": "center",
+                        "focal_point": "center",
+                        "text_safe_area": "top",
+                        "negative_space": "left",
+                        "subject_scale": "medium",
+                        "framing": "tight"
+                    },
+                    "shot_type": "wide-angle",
+                    "scene_description": "e_01 stands with ivy-covered low wall, natural light filtering through greenery. o_04 partially open, revealing folded notes and dried flowers. o_05 rests on o_04, catching light.",
+                    "element_usage": [
+                        {
+                            "element_id": "e_01",
+                            "usage": "visible",
+                            "selected_components": [],
+                            "state_description": "Ivy creeping along low wall, light filtering through greenery."
+                        },
+                        {
+                            "element_id": "o_04",
+                            "usage": "visible",
+                            "selected_components": [],
+                            "state_description": "Partially open, revealing folded notes and dried flowers."
+                        },
+                        {
+                            "element_id": "o_05",
+                            "usage": "visible",
+                            "selected_components": [],
+                            "state_description": "Resting on o_04, catching natural light."
+                        }
+                    ],
+                    "slide_elements": [
+                        {
+                            "objectID": "e_01",
+                            "objectType": "environment",
+                            "description": "Quiet courtyard with ivy-covered low wall, stone pathway, and garden. Natural light filters through greenery."
+                        },
+                        {
+                            "objectID": "o_04",
+                            "objectType": "object",
+                            "description": "Small wooden box with soft natural texture, partially open to reveal folded notes and dried flowers."
+                        }
+                    ],
+                    "used_element_ids": [
+                        "e_01",
+                        "o_04",
+                        "o_05"
+                    ],
+                    "get_visible_element_usage": [
+                        "e_01",
+                        "o_04",
+                        "o_05"
+                    ],
+                    "get_optional_element_usage": [],
+                    "get_used_element_ids_with_components": [],
+                    "used_permanent_element_ids": [
+                        "e_01",
+                        "o_04",
+                        "o_05"
+                    ],
+                    "used_slide_element_ids": []
+                },
+                "layout": "split",
+                "semantic_qa_target": "A quiet courtyard with ivy-covered walls and dappled sunlight. A wooden box with notes and dried flowers rests on the ground, with a single leaf catching the light.",
+                "image_path": "D:\\ProgramData\\ARCArticleGeneration\\carousel_sessions\\c_003\\slideImage_04.png"
+            },
+            {
+                "slide_id": 5,
+                "purpose": "context",
+                "headline": "河邊靜景",
+                "body": "水波輕輕拍打石頭，風聲輕柔",
+                "visual": {
+                    "visual_role": "ending",
+                    "composition": {
+                        "subject_position": "left_third",
+                        "focal_point": "left_third",
+                        "text_safe_area": "left",
+                        "negative_space": "left",
+                        "subject_scale": "medium",
+                        "framing": "medium"
+                    },
+                    "shot_type": "medium shot",
+                    "scene_description": "e_01 contains o_03 and o_05. o_03 sits on the ground, with o_05 resting on its surface.",
+                    "element_usage": [
+                        {
+                            "element_id": "e_01",
+                            "usage": "visible",
+                            "selected_components": [],
+                            "state_description": "quiet courtyard with a low wall and ivy, natural light filtering through the greenery"
+                        },
+                        {
+                            "element_id": "o_03",
+                            "usage": "visible",
+                            "selected_components": [],
+                            "state_description": "ceramic flower vase with dried lavender and a few small, delicate leaves"
+                        },
+                        {
+                            "element_id": "o_05",
+                            "usage": "visible",
+                            "selected_components": [],
+                            "state_description": "single leaf resting on the ceramic vase, catching natural light"
+                        }
+                    ],
+                    "slide_elements": [
+                        {
+                            "objectID": "e_01",
+                            "objectType": "environment",
+                            "description": "A quiet urban courtyard with a stone pathway, small garden, and a wooden bench. The space is enclosed by a low wall with ivy creeping along the surface. The atmosphere is calm and enclosed, with a soft natural light filtering through the greenery."
+                        },
+                        {
+                            "objectID": "o_03",
+                            "objectType": "object",
+                            "description": "A ceramic flower vase with dried lavender and a few small, delicate leaves. The vase is placed on a shelf, with a soft light casting a warm glow on the arrangement."
+                        }
+                    ],
+                    "used_element_ids": [
+                        "e_01",
+                        "o_03",
+                        "o_05"
+                    ],
+                    "get_visible_element_usage": [
+                        "e_01",
+                        "o_03",
+                        "o_05"
+                    ],
+                    "get_optional_element_usage": [],
+                    "get_used_element_ids_with_components": [],
+                    "used_permanent_element_ids": [
+                        "e_01",
+                        "o_03",
+                        "o_05"
+                    ],
+                    "used_slide_element_ids": []
+                },
+                "layout": "split",
+                "semantic_qa_target": "A quiet courtyard with a low wall and ivy, natural light filtering through the greenery. A ceramic flower vase with dried lavender and a few small, delicate leaves. A single leaf resting on the ceramic vase, catching natural light.",
+                "image_path": "D:\\ProgramData\\ARCArticleGeneration\\carousel_sessions\\c_003\\slideImage_05.png"
+            }
+        ]
+    },
+    "status": "pass",
+    "slides": [
+        {
+            "slide_id": 1,
+            "status": "pass",
+            "image": {
+                "path": "D:\\ProgramData\\ARCArticleGeneration\\carousel_sessions\\c_003\\slideImage_01.png",
+                "exists": true,
+                "readable": true,
+                "width": 768,
+                "height": 960,
+                "format": "PNG",
+                "file_size_bytes": 1236837
+            },
+            "issues": []
+        },
+        {
+            "slide_id": 2,
+            "status": "pass",
+            "image": {
+                "path": "D:\\ProgramData\\ARCArticleGeneration\\carousel_sessions\\c_003\\slideImage_02.png",
+                "exists": true,
+                "readable": true,
+                "width": 768,
+                "height": 960,
+                "format": "PNG",
+                "file_size_bytes": 1337480
+            },
+            "issues": []
+        },
+        {
+            "slide_id": 3,
+            "status": "pass",
+            "image": {
+                "path": "D:\\ProgramData\\ARCArticleGeneration\\carousel_sessions\\c_003\\slideImage_03.png",
+                "exists": true,
+                "readable": true,
+                "width": 768,
+                "height": 960,
+                "format": "PNG",
+                "file_size_bytes": 1246164
+            },
+            "issues": []
+        },
+        {
+            "slide_id": 4,
+            "status": "pass",
+            "image": {
+                "path": "D:\\ProgramData\\ARCArticleGeneration\\carousel_sessions\\c_003\\slideImage_04.png",
+                "exists": true,
+                "readable": true,
+                "width": 768,
+                "height": 960,
+                "format": "PNG",
+                "file_size_bytes": 1315749
+            },
+            "issues": []
+        },
+        {
+            "slide_id": 5,
+            "status": "pass",
+            "image": {
+                "path": "D:\\ProgramData\\ARCArticleGeneration\\carousel_sessions\\c_003\\slideImage_05.png",
+                "exists": true,
+                "readable": true,
+                "width": 768,
+                "height": 960,
+                "format": "PNG",
+                "file_size_bytes": 1249027
+            },
+            "issues": []
+        }
+    ],
+    "issues": []
+}

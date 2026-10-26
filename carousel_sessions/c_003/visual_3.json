@@ -1,0 +1,40 @@
+{
+    "positive_prompt": "medium: editorial photography         scene_description: e_01 contains o_03 and o_05. o_03 sits on the ground, with o_05 resting on its surface.         Element Indication for scene_description:         e_01: A quiet urban courtyard with a stone pathway, small garden, and a wooden bench. The space is enclosed by a low wall with ivy creeping along the surface. The atmosphere is calm and enclosed, with a soft natural light filtering through the greenery. change of state for the element in slide: quiet courtyard with a low wall and ivy, natural light filtering through the greenery  o_03: A ceramic flower vase with dried lavender and a few small, delicate leaves. The vase is placed on a shelf, with a soft light casting a warm glow on the arrangement. change of state for the element in slide: ceramic flower vase with dried lavender and a few small, delicate leaves  o_05: A single leaf, partially curled, resting on a wooden surface. The leaf is positioned to catch the light, highlighting its texture and the subtle details of its veins. change of state for the element in slide: single leaf resting on the ceramic vase, catching natural light         Slide element e_01: A quiet urban courtyard with a stone pathway, small garden, and a wooden bench. The space is enclosed by a low wall with ivy creeping along the surface. The atmosphere is calm and enclosed, with a soft natural light filtering through the greenery.  Slide element o_03: A ceramic flower vase with dried lavender and a few small, delicate leaves. The vase is placed on a shelf, with a soft light casting a warm glow on the arrangement.                  Optional aesthetic to include for visual enhancement:         No optional element to select from                  Composition and stage direction:         composition:          subject_position: right_third         focal_point: right_third         text_safe_area: left         negative_space: left         subject_scale: medium         framing: medium                  shot_type: medium shot         ",
+    "negative_prompt": "blurry imagery, bad anatomy, over-complicated, cold color palette, oversaturation, harsh shadows, cluttered composition, distracting elements, low detail, unrealistic textures, digital noise, jpeg artifacts, deformed objects, mutated forms, poorly rendered foliage, out of focus background, unnatural lighting, overly dramatic contrast, tiling, watermark, signature, text, writing, low resolution",
+    "overall_visual": "camera settings: 35mm documentary photography, 50mm lens lighting: soft natural light with warm tones color palette: warm cream neutrals, muted charcoal, soft gray, subtle natural earthy tones mood: quiet and reflective composition interpretation: minimal, clean composition with generous negative space",
+    "image_composition": "Composition and stage direction: composition:  subject_position: right_third focal_point: right_third text_safe_area: left negative_space: left subject_scale: medium framing: medium  shot_type: medium shot",
+    "width": 768,
+    "height": 960,
+    "seed": 1262894826,
+    "metadata": {
+        "carousel_id": "c_003",
+        "slide_id": 3,
+        "element": [
+            [
+                "e_01",
+                "o_03",
+                "o_05"
+            ],
+            []
+        ],
+        "element_used": [
+            "e_01: A quiet urban courtyard with a stone pathway, small garden, and a wooden bench. The space is enclosed by a low wall with ivy creeping along the surface. The atmosphere is calm and enclosed, with a soft natural light filtering through the greenery. change of state for the element in slide: quiet courtyard with a low wall and ivy, natural light filtering through the greenery",
+            "o_03: A ceramic flower vase with dried lavender and a few small, delicate leaves. The vase is placed on a shelf, with a soft light casting a warm glow on the arrangement. change of state for the element in slide: ceramic flower vase with dried lavender and a few small, delicate leaves",
+            "o_05: A single leaf, partially curled, resting on a wooden surface. The leaf is positioned to catch the light, highlighting its texture and the subtle details of its veins. change of state for the element in slide: single leaf resting on the ceramic vase, catching natural light"
+        ],
+        "element_optional": [],
+        "slide_element": [
+            {
+                "objectID": "e_01",
+                "objectType": "environment",
+                "description": "A quiet urban courtyard with a stone pathway, small garden, and a wooden bench. The space is enclosed by a low wall with ivy creeping along the surface. The atmosphere is calm and enclosed, with a soft natural light filtering through the greenery."
+            },
+            {
+                "objectID": "o_03",
+                "objectType": "object",
+                "description": "A ceramic flower vase with dried lavender and a few small, delicate leaves. The vase is placed on a shelf, with a soft light casting a warm glow on the arrangement."
+            }
+        ],
+        "layout": "split"
+    }
+}
