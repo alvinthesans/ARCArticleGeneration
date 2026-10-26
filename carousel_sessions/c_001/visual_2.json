@@ -1,0 +1,38 @@
+{
+    "positive_prompt": "medium: editorial photography         scene_description: e_02, o_03         Element Indication for scene_description:         e_02: A tranquil valley surrounded by mountains, with a calm lake reflecting the sky and surrounding landscape. change of state for the element in slide: Dominant on the left side, with mountains extending upward  o_03: A small, natural rock formation with unique shapes and textures, found in a stream or mountain area. change of state for the element in slide: Positioned on the right side, with subtle textures and natural patterns         Slide element se_02: A tranquil valley surrounded by mountains, with a calm lake reflecting the sky and surrounding landscape.  Slide element so_02: A small, natural rock formation with unique shapes and textures, found in a stream or mountain area.                  Optional aesthetic to include for visual enhancement:         No optional element to select from                  Composition and stage direction:         composition:          subject_position: left         focal_point: center         text_safe_area: top         negative_space: right         subject_scale: medium         framing: tight                  shot_type: wide-angle         ",
+    "negative_prompt": "blurry imagery, bad anatomy, over-complicated, overly cold color palette, oversaturation, unrealistic textures, unnatural lighting, digital noise, artifacts, poorly rendered water reflections, deformed rock formations, cluttered composition, distorted perspective, low detail, amateur photography, watermark, signature, text, writing, tiling, cropped, out of frame, abstract, harsh shadows, overly dramatic lighting",
+    "overall_visual": "camera settings: 35mm documentary photography, 50mm lens lighting: soft natural light with subtle shadows color palette: warm cream neutrals, muted charcoal, soft gray, subtle natural earthy tones mood: quiet and reflective composition interpretation: minimal, clean composition with generous negative space",
+    "image_composition": "Composition and stage direction: composition:  subject_position: left focal_point: center text_safe_area: top negative_space: right subject_scale: medium framing: tight  shot_type: wide-angle",
+    "width": 768,
+    "height": 960,
+    "seed": 1694904431,
+    "metadata": {
+        "carousel_id": "c_001",
+        "slide_id": 2,
+        "element": [
+            [
+                "e_02",
+                "o_03"
+            ],
+            []
+        ],
+        "element_used": [
+            "e_02: A tranquil valley surrounded by mountains, with a calm lake reflecting the sky and surrounding landscape. change of state for the element in slide: Dominant on the left side, with mountains extending upward",
+            "o_03: A small, natural rock formation with unique shapes and textures, found in a stream or mountain area. change of state for the element in slide: Positioned on the right side, with subtle textures and natural patterns"
+        ],
+        "element_optional": [],
+        "slide_element": [
+            {
+                "objectID": "se_02",
+                "objectType": "environment",
+                "description": "A tranquil valley surrounded by mountains, with a calm lake reflecting the sky and surrounding landscape."
+            },
+            {
+                "objectID": "so_02",
+                "objectType": "object",
+                "description": "A small, natural rock formation with unique shapes and textures, found in a stream or mountain area."
+            }
+        ],
+        "layout": "image_full"
+    }
+}

@@ -1,0 +1,111 @@
+name: minimal_editorial
+
+canva_size:
+  width: 768
+  height: 960
+
+typography:
+  "en":
+    headline_font: "EB Garamond"
+    body_font: "EB Garamond"
+
+    headline_weight: 700
+    body_weight: 400
+
+    headline_size: 72
+    body_size: 36
+
+    line_height: 1.2
+
+  "zh-HK":
+    headline_font: "Chocolate Classical Sans"
+    body_font: "Chocolate Classical Sans"
+
+    headline_weight: 700
+    body_weight: 400
+
+    headline_size: 96
+    body_size: 48
+
+    line_height: 1
+
+colors:
+  background: "#F5F3EE"
+  primary_text: "#171717"
+  secondary_text: "#666666"
+  accent: "#7A6F5D"
+
+image:
+  medium: "editorial photography"
+  lighting: "soft natural light"
+  camera: "35mm documentary photography, 50mm lens"
+  color_treatment: "warm cream neutrals, muted charcoal, soft gray, subtle natural earthy tones"
+  contrast: "low"
+  composition: "minimal, clean composition with generous negative space"
+  mood: "quiet and reflective"
+
+preferred_layouts:
+  - layout_name: 'hero'
+    Constraint:
+      - var_name: "subject_position"
+        severity: 'strict'
+        allowed_positions:
+          - 'center'
+          - 'right'
+          - 'right_third'
+
+  - layout_name: 'split'
+    Constraint:
+      - var_name: "text_safe_area"
+        severity: 'preferred'
+        allowed_positions:
+          - 'left'
+      - var_name: "negative_space"
+        severity: 'preferred'
+        allowed_positions:
+          - 'left'
+      - var_name: "subject_position"
+        severity: 'preferred'
+        allowed_positions:
+          - 'right'
+
+  - layout_name: 'statement'
+    Constraint:
+      - var_name: "text_safe_area"
+        severity: "optional"
+        allowed_positions:
+          - 'left_third'
+      - var_name: "subject_position"
+        severity: "optional"
+        allowed_positions:
+          - 'right_third'
+      - var_name: "negative_space"
+        severity: "optional"
+        allowed_positions:
+          - "left_third"
+
+  - layout_name: 'image_full'
+    Constraint:
+      - var_name: "subject_scale"
+        severity: "preferred"
+        allowed_positions:
+          - 'large'
+      - var_name: "text_safe_area"
+        severity: 'preferred'
+        allowed_positions:
+          - 'none'
+      - var_name: "negative_space"
+        severity: 'preferred'
+        allowed_positions:
+          - 'none'
+
+  - layout_name: 'ending'
+    Constraint:
+      - var_name: "subject_position"
+        severity: 'strict'
+        allowed_positions:
+          - 'center'
+          - 'left'
+          - 'left_third'
+
+negative_prompt: "blurry imagery, bad anatomy, over-complicated, cold color being the most"

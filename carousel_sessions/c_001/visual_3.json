@@ -1,0 +1,40 @@
+{
+    "positive_prompt": "medium: editorial photography         scene_description: e_03, o_01, o_02         Element Indication for scene_description:         e_03: A peaceful grassland with gentle hills and a clear blue sky, with soft natural light casting long shadows. change of state for the element in slide: A peaceful grassland with gentle hills and a clear blue sky, with soft natural light casting long shadows.  o_01: A smooth, natural stone with subtle textures and patterns, placed in a natural setting. change of state for the element in slide: A smooth, natural stone placed in the center of the frame, surrounded by soft shadows.  o_02: A cluster of wildflowers with soft colors and natural arrangement, growing in a meadow or forest floor. change of state for the element in slide: A cluster of wildflowers growing at the base of the stone, with soft natural light casting long shadows.         Slide element se_03: A peaceful grassland with gentle hills and a clear blue sky, with soft natural light casting long shadows.  Slide element so_03: A smooth, natural stone with subtle textures and patterns, placed in a natural setting.                  Optional aesthetic to include for visual enhancement:         No optional element to select from                  Composition and stage direction:         composition:          subject_position: right_third         focal_point: bottom         text_safe_area: left         negative_space: left         subject_scale: medium         framing: medium                  shot_type: low angle         ",
+    "negative_prompt": "blurry imagery, bad anatomy, over-complicated, cold color tones, harsh shadows, unnatural lighting, digital noise, grain, oversaturation, artificial elements, cluttered composition, distorted shapes, poorly rendered stone texture, unrealistic flora, unwanted text, watermark, signature, low contrast, amateur photography, busy background, distracting elements",
+    "overall_visual": "camera settings: 35mm documentary photography, 50mm lens lighting: soft natural light with subtle shadows color palette: warm cream neutrals, muted charcoal, soft gray, subtle natural earthy tones mood: quiet and reflective composition interpretation: minimal, clean composition with generous negative space",
+    "image_composition": "Composition and stage direction: composition:  subject_position: right_third focal_point: bottom text_safe_area: left negative_space: left subject_scale: medium framing: medium  shot_type: low angle",
+    "width": 768,
+    "height": 960,
+    "seed": 310904079,
+    "metadata": {
+        "carousel_id": "c_001",
+        "slide_id": 3,
+        "element": [
+            [
+                "e_03",
+                "o_01",
+                "o_02"
+            ],
+            []
+        ],
+        "element_used": [
+            "e_03: A peaceful grassland with gentle hills and a clear blue sky, with soft natural light casting long shadows. change of state for the element in slide: A peaceful grassland with gentle hills and a clear blue sky, with soft natural light casting long shadows.",
+            "o_01: A smooth, natural stone with subtle textures and patterns, placed in a natural setting. change of state for the element in slide: A smooth, natural stone placed in the center of the frame, surrounded by soft shadows.",
+            "o_02: A cluster of wildflowers with soft colors and natural arrangement, growing in a meadow or forest floor. change of state for the element in slide: A cluster of wildflowers growing at the base of the stone, with soft natural light casting long shadows."
+        ],
+        "element_optional": [],
+        "slide_element": [
+            {
+                "objectID": "se_03",
+                "objectType": "environment",
+                "description": "A peaceful grassland with gentle hills and a clear blue sky, with soft natural light casting long shadows."
+            },
+            {
+                "objectID": "so_03",
+                "objectType": "object",
+                "description": "A smooth, natural stone with subtle textures and patterns, placed in a natural setting."
+            }
+        ],
+        "layout": "split"
+    }
+}

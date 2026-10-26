@@ -1,0 +1,31 @@
+{
+    "positive_prompt": "medium: editorial photography scene_description: e_03 Element Indication for scene_description: e_03: A cozy café with a wooden table, a ceramic mug, and a book placed on the table. The lighting is soft and warm, creating a peaceful and inviting atmosphere. change of state for the element in slide: A cozy café with a wooden table, a ceramic mug, and a book placed on the table. The lighting is soft and warm, creating a peaceful and inviting atmosphere. Slide element e_03: A cozy café with a wooden table, a ceramic mug, and a book placed on the table. The lighting is soft and warm, creating a peaceful and inviting atmosphere.  Optional aesthetic to include for visual enhancement: No optional element to select from  Composition and stage direction: composition:  subject_position: right_third focal_point: right text_safe_area: left negative_space: left subject_scale: medium framing: wide  shot_type: wide shot",
+    "negative_prompt": "blurry imagery, bad anatomy, over-complicated, cold color tones, harsh lighting, oversaturation, unnatural textures, digital noise, grainy, abstract, deformed objects, messy composition, cluttered background, watermark, signature, text, writing, low contrast, monochrome, dark shadows, aggressive shadows, distracting elements, poorly rendered details",
+    "overall_visual": "camera settings: 35mm documentary photography, 50mm lens lighting: soft natural light, warm tones color palette: warm cream neutrals, muted charcoal, soft gray, subtle natural earthy tones mood: quiet and reflective composition interpretation: minimal, clean composition with generous negative space",
+    "image_composition": "Composition and stage direction: composition:  subject_position: right_third focal_point: right text_safe_area: left negative_space: left subject_scale: medium framing: wide  shot_type: wide shot",
+    "width": 768,
+    "height": 960,
+    "seed": 2817521060,
+    "metadata": {
+        "carousel_id": "c_002",
+        "slide_id": 3,
+        "element": [
+            [
+                "e_03"
+            ],
+            []
+        ],
+        "element_used": [
+            "e_03: A cozy café with a wooden table, a ceramic mug, and a book placed on the table. The lighting is soft and warm, creating a peaceful and inviting atmosphere. change of state for the element in slide: A cozy café with a wooden table, a ceramic mug, and a book placed on the table. The lighting is soft and warm, creating a peaceful and inviting atmosphere."
+        ],
+        "element_optional": [],
+        "slide_element": [
+            {
+                "objectID": "e_03",
+                "objectType": "environment",
+                "description": "A cozy café with a wooden table, a ceramic mug, and a book placed on the table. The lighting is soft and warm, creating a peaceful and inviting atmosphere."
+            }
+        ],
+        "layout": "split"
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "positive_prompt": "medium: editorial photography scene_description: e_02, with se_01 showing a single puddle reflecting the sky, capturing the stillness of the rain-soaked street Element Indication for scene_description: Element e_02: change of state for the element in slide: rain-soaked street with damp cobblestones, small puddles reflecting the sky, and faint sound of distant rain Slide element se_01: A rain-soaked street with damp cobblestones, small puddles reflecting the sky, and the faint sound of distant rain. The atmosphere is fresh and clean, with a subtle sense of renewal.  Optional aesthetic to include for visual enhancement: No optional element to select from  Composition and stage direction: composition:  subject_position: center focal_point: center text_safe_area: top negative_space: left subject_scale: medium framing: tight  shot_type: medium close-up",
+    "negative_prompt": "blurry imagery, bad anatomy, over-complicated, overly cold color grading, harsh shadows, distracting elements, cluttered background, low contrast, noisy, grain, jpeg artifacts, amateur photo, oversaturated, cartoonish, illustration, digital painting, abstract, unrealistic reflections, water distortion errors, warped cobblestones, messy composition, out of focus areas other than intended shallow depth of field",
+    "overall_visual": "camera settings: 35mm documentary photography, 50mm lens lighting: soft natural light, warm tones color palette: warm cream neutrals, muted charcoal, soft gray, subtle natural earthy tones mood: quiet and reflective composition interpretation: minimal, clean composition with generous negative space",
+    "image_composition": "Composition and stage direction: composition:  subject_position: center focal_point: center text_safe_area: top negative_space: left subject_scale: medium framing: tight  shot_type: medium close-up",
+    "width": 768,
+    "height": 960,
+    "seed": 2277523564,
+    "metadata": {
+        "carousel_id": "c_002",
+        "slide_id": 2,
+        "element": [
+            [
+                "e_02"
+            ],
+            []
+        ],
+        "element_used": [
+            "Element e_02: change of state for the element in slide: rain-soaked street with damp cobblestones, small puddles reflecting the sky, and faint sound of distant rain"
+        ],
+        "element_optional": [],
+        "slide_element": [
+            {
+                "objectID": "se_01",
+                "objectType": "environment",
+                "description": "A rain-soaked street with damp cobblestones, small puddles reflecting the sky, and the faint sound of distant rain. The atmosphere is fresh and clean, with a subtle sense of renewal."
+            }
+        ],
+        "layout": "ending"
+    }
+}

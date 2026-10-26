@@ -1,0 +1,34 @@
+[
+    {
+        "slide_id": 1,
+        "image_path": "D:\\ProgramData\\ARCArticleGeneration\\carousel_sessions\\c_001\\slideImage_01.png",
+        "scene_score": 0.8866,
+        "negative_score": 0.0,
+        "visual_prompt": "苔蘚覆蓋的森林地表上，一片枯葉靜靜躺著，空中懸浮著水滴，陽光從樹冠間灑落",
+        "negative_prompt": "blurry imagery, bad anatomy, over-complicated, cold color tones, oversaturation, harsh lighting, digital noise, grain, low contrast, unrealistic textures, smooth plastic look, amateur photography, artifacts, watermark, signature, text, cropped, out of frame, unnatural colors, distracting elements, overly dramatic shadows, excessive detail in non-focus areas."
+    },
+    {
+        "slide_id": 2,
+        "image_path": "D:\\ProgramData\\ARCArticleGeneration\\carousel_sessions\\c_001\\slideImage_02.png",
+        "scene_score": 0.8332,
+        "negative_score": 0.0008,
+        "visual_prompt": "一滴水在空中折射出微光，背景有模糊的樹葉輪廓，左側留白空間",
+        "negative_prompt": "blurry imagery, bad anatomy, over-complicated, overly cold color palette, unrealistic textures, distorted droplets, mutated insects, poorly rendered glass or water refraction, amateur photography, oversaturated, noisy, low detail, artifacts, ugly, tiling, out of frame, watermark, signature, text, writing, cropped, jpeg artifacts"
+    },
+    {
+        "slide_id": 3,
+        "image_path": "D:\\ProgramData\\ARCArticleGeneration\\carousel_sessions\\c_001\\slideImage_03.png",
+        "scene_score": 0.6118,
+        "negative_score": 0.0,
+        "visual_prompt": "風化的石頭上布滿地衣，左側留白空間，背景有模糊的樹葉輪廓, containing: ('autumn leaf partially visible',)",
+        "negative_prompt": "blurry imagery, bad anatomy, over-complicated, overly cold color palette, digital art, smooth rendering, illustration, cartoon, bright colors, saturated colors, high contrast, oversaturated, unrealistic lighting, noisy, grainy, artifacts, low resolution, tiling, watermark, signature, text, writing, abstract, cropped, out of frame, distracting elements, harsh shadows, synthetic look"
+    },
+    {
+        "slide_id": 4,
+        "image_path": "D:\\ProgramData\\ARCArticleGeneration\\carousel_sessions\\c_001\\slideImage_04.png",
+        "scene_score": 0.7442,
+        "negative_score": 0.0,
+        "visual_prompt": "菌絲從苔蘚中生長出來，右側留白空間，背景有模糊的樹葉輪廓, containing: ('autumn leaf partially visible', 'element: wilted autumn leaf with translucent veins, resting on mossy surface, state: autumn leaf partially visible')",
+        "negative_prompt": "blurry imagery, bad anatomy, over-complicated, overly cold color palette, oversaturated, unrealistic lighting, low contrast, digital noise, grainy, artifacts, amateur photo, cartoon, illustration, drawing, painting, abstract, cluttered composition, distracting elements, poorly rendered textures, mutated, deformed, extra limbs, missing parts, text, watermark, signature"
+    }
+]

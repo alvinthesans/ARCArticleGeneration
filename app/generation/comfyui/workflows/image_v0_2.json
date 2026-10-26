@@ -1,0 +1,715 @@
+{
+  "1": {
+    "inputs": {
+      "ckpt_name": "hidream_o1_image_bf16.safetensors"
+    },
+    "class_type": "CheckpointLoaderSimple",
+    "_meta": {
+      "title": "Load Checkpoint"
+    }
+  },
+  "2": {
+    "inputs": {
+      "text": [
+        "312",
+        0
+      ],
+      "clip": [
+        "1",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP Text Encode (Prompt)"
+    }
+  },
+  "3": {
+    "inputs": {
+      "value": "positive_prompt: \n        medium: editorial photography\n        Element description: \n        elementID: c_01\n        elementType: character\n        description: \n        age: 28\n        gender: female\n        \n        ethnicity: Asian\n        face_description: peaceful expression, slightly drooping eyes\n        skin_description: clear, warm undertone\n        hair_description: long, straight, dark brown hair\n        other_description: relaxed posture, slightly slumped\n        \n        wardrobe_description: loose-fitting cotton shirt, loose linen pants, minimal accessories\n        default_emotion: #calm\n        \n        persistence: required\n        \n        elementID: e_01\n        elementType: environment\n        description: a small living room, with a window letting in warm natural light, a small bookshelf, a simple wooden desk, and a cozy reading corner with a plush armchair\n        persistence: preferred\n        \n        elementID: o_01\n        elementType: object\n        description: a cup of warm herbal tea, a book, a small plant, and a soft blanket\n        persistence: required\n        \n        visual description:  \n        role: persistent\n        scene_description: c_01 is sitting in the cozy reading corner of e_01, holding a cup of warm herbal tea from o_01 and a book, with a soft blanket nearby.\n        composition: \n        subject_position: center\n        focal_point: center\n        text_safe_area: top\n        negative_space: bottom\n        subject_scale: medium\n        framing: close-up\n        \n        shot_type: static\n        \n        Slide purpose: Purpose.CONTEXT"
+    },
+    "class_type": "PrimitiveStringMultiline",
+    "_meta": {
+      "title": "Slide Visual Prompt"
+    }
+  },
+  "244": {
+    "inputs": {
+      "value": "camera settings: 35mm documentary photography, 50mm lens\n        lighting: soft natural light, morning or late afternoon warm light\n        color palette: warm cream neutrals, muted charcoal, soft gray, subtle natural earthy tones\n        mood: quiet and reflective\n        composition interpretation: minimal, clean composition with generous negative space\n"
+    },
+    "class_type": "PrimitiveStringMultiline",
+    "_meta": {
+      "title": "Overall visual setting"
+    }
+  },
+  "246": {
+    "inputs": {
+      "value": "blurry imagery, bad anatomy, over-complicated, cold color being the most"
+    },
+    "class_type": "PrimitiveStringMultiline",
+    "_meta": {
+      "title": "Negative Prompt default"
+    }
+  },
+  "248": {
+    "inputs": {
+      "image": "WhatsApp Image 2026-09-02 at 12.24.09 AM.jpeg",
+      "enabled": [
+        "319",
+        0
+      ]
+    },
+    "class_type": "LoadImageWithSwitch",
+    "_meta": {
+      "title": "Load Image with Switch"
+    }
+  },
+  "254": {
+    "inputs": {
+      "upscale_method": "lanczos",
+      "megapixels": 4,
+      "resolution_steps": 1,
+      "image": [
+        "248",
+        0
+      ]
+    },
+    "class_type": "ImageScaleToTotalPixels",
+    "_meta": {
+      "title": "Scale Image to Total Pixels"
+    }
+  },
+  "255": {
+    "inputs": {
+      "value": false
+    },
+    "class_type": "PrimitiveBoolean",
+    "_meta": {
+      "title": "Image Edit?"
+    }
+  },
+  "256": {
+    "inputs": {
+      "value": false
+    },
+    "class_type": "PrimitiveBoolean",
+    "_meta": {
+      "title": "Visual prompt refine with image?"
+    }
+  },
+  "257": {
+    "inputs": {
+      "switch": [
+        "256",
+        0
+      ],
+      "on_false": [
+        "3",
+        0
+      ],
+      "on_true": [
+        "3",
+        0
+      ]
+    },
+    "class_type": "ComfySwitchNode",
+    "_meta": {
+      "title": "If/Else Switch"
+    }
+  },
+  "258": {
+    "inputs": {
+      "source": [
+        "257",
+        0
+      ]
+    },
+    "class_type": "PreviewAny",
+    "_meta": {
+      "title": "Visual Prompt"
+    }
+  },
+  "260": {
+    "inputs": {
+      "switch": [
+        "255",
+        0
+      ],
+      "on_false": [
+        "265",
+        0
+      ],
+      "on_true": [
+        "264",
+        0
+      ]
+    },
+    "class_type": "ComfySwitchNode",
+    "_meta": {
+      "title": "image size"
+    }
+  },
+  "261": {
+    "inputs": {
+      "image": [
+        "254",
+        0
+      ]
+    },
+    "class_type": "GetImageSize",
+    "_meta": {
+      "title": "Get Image Size"
+    }
+  },
+  "262": {
+    "inputs": {
+      "expression": "floor(a/32)*32",
+      "values.a": [
+        "261",
+        0
+      ]
+    },
+    "class_type": "ComfyMathExpression",
+    "_meta": {
+      "title": "Math Expression"
+    }
+  },
+  "263": {
+    "inputs": {
+      "expression": "floor(a/32)*32",
+      "values.a": [
+        "261",
+        1
+      ]
+    },
+    "class_type": "ComfyMathExpression",
+    "_meta": {
+      "title": "Math Expression"
+    }
+  },
+  "264": {
+    "inputs": {
+      "width": [
+        "262",
+        1
+      ],
+      "height": [
+        "263",
+        1
+      ],
+      "batch_size": 1
+    },
+    "class_type": "EmptyHiDreamO1LatentImage",
+    "_meta": {
+      "title": "Empty HiDream-O1 Latent Image"
+    }
+  },
+  "265": {
+    "inputs": {
+      "width": 768,
+      "height": 960,
+      "batch_size": 1
+    },
+    "class_type": "EmptyHiDreamO1LatentImage",
+    "_meta": {
+      "title": "Image size (Input)"
+    }
+  },
+  "267": {
+    "inputs": {
+      "filename_prefix": "slide_01",
+      "images": [
+        "306",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Image output"
+    }
+  },
+  "298": {
+    "inputs": {
+      "positive": [
+        "2",
+        0
+      ],
+      "negative": [
+        "300",
+        0
+      ],
+      "images.image_1": [
+        "248",
+        0
+      ],
+      "images.image_2": [
+        "355",
+        0
+      ]
+    },
+    "class_type": "HiDreamO1ReferenceImages",
+    "_meta": {
+      "title": "HiDream-O1 Reference Images"
+    }
+  },
+  "300": {
+    "inputs": {
+      "text": [
+        "282:296",
+        0
+      ],
+      "clip": [
+        "1",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP Text Encode (Prompt)"
+    }
+  },
+  "301": {
+    "inputs": {
+      "noise_scale": 8,
+      "model": [
+        "1",
+        0
+      ]
+    },
+    "class_type": "ModelNoiseScale",
+    "_meta": {
+      "title": "ModelNoiseScale"
+    }
+  },
+  "302": {
+    "inputs": {
+      "sampler_name": "dpmpp_2m_sde_gpu"
+    },
+    "class_type": "KSamplerSelect",
+    "_meta": {
+      "title": "KSamplerSelect"
+    }
+  },
+  "303": {
+    "inputs": {
+      "scheduler": "normal",
+      "steps": 50,
+      "denoise": [
+        "340",
+        0
+      ],
+      "model": [
+        "301",
+        0
+      ]
+    },
+    "class_type": "BasicScheduler",
+    "_meta": {
+      "title": "BasicScheduler"
+    }
+  },
+  "304": {
+    "inputs": {
+      "start_percent": 0.8,
+      "end_percent": 1,
+      "pattern": "single_shift",
+      "passes": "ramp_2_4",
+      "blend": "median",
+      "strength": 1,
+      "model": [
+        "301",
+        0
+      ]
+    },
+    "class_type": "HiDreamO1PatchSeamSmoothing",
+    "_meta": {
+      "title": "HiDream-O1 Patch Seam Smoothing"
+    }
+  },
+  "305": {
+    "inputs": {
+      "add_noise": true,
+      "noise_seed": 900956424172359,
+      "cfg": 4,
+      "model": [
+        "304",
+        0
+      ],
+      "positive": [
+        "307",
+        0
+      ],
+      "negative": [
+        "309",
+        0
+      ],
+      "sampler": [
+        "302",
+        0
+      ],
+      "sigmas": [
+        "303",
+        0
+      ],
+      "latent_image": [
+        "341",
+        0
+      ]
+    },
+    "class_type": "SamplerCustom",
+    "_meta": {
+      "title": "SamplerCustom"
+    }
+  },
+  "306": {
+    "inputs": {
+      "samples": [
+        "305",
+        0
+      ],
+      "vae": [
+        "1",
+        2
+      ]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE Decode"
+    }
+  },
+  "307": {
+    "inputs": {
+      "switch": [
+        "255",
+        0
+      ],
+      "on_false": [
+        "2",
+        0
+      ],
+      "on_true": [
+        "298",
+        0
+      ]
+    },
+    "class_type": "ComfySwitchNode",
+    "_meta": {
+      "title": "If/Else Switch"
+    }
+  },
+  "309": {
+    "inputs": {
+      "switch": [
+        "255",
+        0
+      ],
+      "on_false": [
+        "300",
+        0
+      ],
+      "on_true": [
+        "298",
+        1
+      ]
+    },
+    "class_type": "ComfySwitchNode",
+    "_meta": {
+      "title": "If/Else Switch"
+    }
+  },
+  "311": {
+    "inputs": {
+      "source": [
+        "282:296",
+        0
+      ]
+    },
+    "class_type": "PreviewAny",
+    "_meta": {
+      "title": "negative prompt (enhanced)"
+    }
+  },
+  "312": {
+    "inputs": {
+      "string_a": [
+        "257",
+        0
+      ],
+      "string_b": [
+        "244",
+        0
+      ],
+      "delimiter": ""
+    },
+    "class_type": "StringConcatenate",
+    "_meta": {
+      "title": "Concatenate Text"
+    }
+  },
+  "319": {
+    "inputs": {
+      "value": false
+    },
+    "class_type": "PrimitiveBoolean",
+    "_meta": {
+      "title": "Use image?"
+    }
+  },
+  "336": {
+    "inputs": {
+      "value": false
+    },
+    "class_type": "PrimitiveBoolean",
+    "_meta": {
+      "title": "Image direct reference"
+    }
+  },
+  "337": {
+    "inputs": {
+      "pixels": [
+        "248",
+        0
+      ],
+      "vae": [
+        "1",
+        2
+      ]
+    },
+    "class_type": "VAEEncode",
+    "_meta": {
+      "title": "VAE Encode"
+    }
+  },
+  "338": {
+    "inputs": {
+      "value": 1
+    },
+    "class_type": "PrimitiveFloat",
+    "_meta": {
+      "title": "Text to Image"
+    }
+  },
+  "339": {
+    "inputs": {
+      "value": 0.6
+    },
+    "class_type": "PrimitiveFloat",
+    "_meta": {
+      "title": "image to Image"
+    }
+  },
+  "340": {
+    "inputs": {
+      "switch": [
+        "336",
+        0
+      ],
+      "on_false": [
+        "338",
+        0
+      ],
+      "on_true": [
+        "339",
+        0
+      ]
+    },
+    "class_type": "ComfySwitchNode",
+    "_meta": {
+      "title": "If/Else Switch"
+    }
+  },
+  "341": {
+    "inputs": {
+      "switch": [
+        "336",
+        0
+      ],
+      "on_false": [
+        "260",
+        0
+      ],
+      "on_true": [
+        "337",
+        0
+      ]
+    },
+    "class_type": "ComfySwitchNode",
+    "_meta": {
+      "title": "If/Else Switch"
+    }
+  },
+  "355": {
+    "inputs": {
+      "folder": "",
+      "width": 512,
+      "height": 512,
+      "keep_aspect_ratio": "pad",
+      "image_load_cap": 0,
+      "start_index": 0,
+      "include_subfolders": false
+    },
+    "class_type": "LoadImagesFromFolderKJ",
+    "_meta": {
+      "title": "Asset Reference"
+    }
+  },
+  "282:283": {
+    "inputs": {
+      "value": "<|turn>system\n你是专业的AI图像生成Negative Prompt工程师的 Prompt Engineering Engine，也是一名拥有百科知识、视觉导演能力和图像生成模型经验的创意总监。你的任务是分析用户提供的 **visual_prompt** 和 **negative_prompt**，理解视觉prompt所要求生成的画面，并将原始negative prompt改写成一个**明确、详细、与visual_prompt高度匹配、可直接用于图像生成的英文negative prompt**。\n\n## 核心目标\n\n图像生成模型中的negative prompt应该针对当前visual prompt主动排除最可能破坏画面意图、主体结构、空间关系、材质、风格、文字和技术质量的问题。因此，你不能只是机械地重复或扩展原始negative prompt，而必须先理解visual prompt，再根据其中的具体主体、构图、动作、环境、风格和文字要求，生成具有针对性的negative prompt。\n\n同时，**原始negative prompt中的有效元素必须尽可能保留**。你可以重新组织、去重、合并、细化和补充这些元素，但不能无理由删除用户明确提供的负面限制。只有当某个元素与visual prompt直接冲突、完全重复、无法成立，或会阻止visual prompt正常生成时，才可以进行合理调整。\n\n使用 SCALIST 框架分析 visual_prompt，并将其作为negative prompt设计的依据：\n- **Subject**: 主体身份、外观、颜色、材质、纹理、动作、表情、服饰以及容易出现的错误.\n- **Composition**: 镜头景别、视角、主体位置、前景/中景/背景关系、留白、视觉焦点以及容易出现的构图错误.\n- **Action**: 主体动作、方向、姿态、互动关系以及容易出现的肢体或物理错误.\n- **Location**: 场景地点、室内/室外、时代、天气、时间段、环境细节以及不符合场景的元素.\n- **Image style**: photorealistic、cinematic、oil painting、watercolor、anime、3D render等视觉风格，以及不符合目标风格的渲染方式.\n- **Specs**: 镜头、景深、光线、材质、清晰度、渲染质量和常见技术缺陷.\n- **Text rendering**: 如果visual_prompt要求文字，必须针对文字内容排除拼写错误、乱码、错误字符、缺字、多余文字、错误字体、错误位置、不可读文本等问题。\n\n## 核心原则\n\n### 1. Visual Prompt优先，Negative Prompt负责保护它\n\n首先完整理解visual_prompt想要生成什么，再决定negative prompt需要阻止什么。\n\n例如，如果visual_prompt要求：\n\n\"an elderly Japanese man in traditional clothing standing in a quiet tea room\"\n\nnegative prompt应该针对这个画面补充：\n\n- young-looking face\n- modern clothing\n- Western-style interior\n- incorrect anatomy\n- extra people\n- crowded background\n- exaggerated expression\n\n而不是仅仅输出一个通用的：\n\n\"blurry, bad anatomy, low quality\"\n\nNegative prompt必须服务于visual prompt，而不是独立存在。\n\n### 2. 保留原始 Negative Prompt\n\n用户提供的negative_prompt是已有约束条件，必须作为基础继续使用。\n\n例如原始negative_prompt：\n\n\"blurry, low quality, bad anatomy, extra fingers\"\n\n你必须至少保留这些有效限制，并可以扩展为：\n\n\"blurry, low quality, bad anatomy, extra fingers, missing fingers, malformed hands, distorted facial features...\"\n\n不要因为visual_prompt没有提到手，就删除\"extra fingers\"。\n\n### 3. 根据 Visual Prompt 动态补充\n\n从visual_prompt中识别具体的潜在失败点，并加入针对性的negative constraints。\n\n例如：\n\nvisual_prompt包含：\n- person → bad anatomy, distorted face, duplicated person\n- hands → extra fingers, missing fingers, fused fingers\n- architecture → warped geometry, impossible perspective\n- vehicle → malformed wheels, duplicated parts\n- food → melted structure, unnatural texture\n- animal → incorrect anatomy, extra limbs\n- landscape → artificial geometry, duplicated objects\n- reflective surface → inconsistent reflections\n- cinematic lighting → flat lighting, incorrect shadows\n- shallow depth of field → everything in focus\n- historical scene → modern objects, contemporary clothing\n- UI → incorrect layout, missing controls, distorted interface elements\n- specific text → misspelled text, illegible characters, gibberish\n- photorealism → cartoonish rendering, plastic skin, CGI appearance\n\n不要机械加入所有可能的negative terms，只加入与当前visual_prompt真正相关、能够保护目标画面的内容。\n\n### 4. 不要否定 Visual Prompt 本身要求的元素\n\nNegative prompt不能与visual_prompt产生直接冲突。\n\n例如visual_prompt要求：\n\n\"dramatic fog covering the distant mountains\"\n\n不要加入：\n\n\"no fog, clear atmosphere\"\n\nvisual_prompt要求：\n\n\"oil painting\"\n\n不要加入：\n\n\"painting, brush strokes\"\n\nvisual_prompt要求：\n\n\"low-angle shot\"\n\n不要加入：\n\n\"normal eye-level perspective\"\n\nNegative prompt应该排除**错误版本**，而不是排除用户要求的元素本身。\n\n例如可以写：\n\n\"muddy, uncontrolled fog obscuring the main subject\"\n\n而不是：\n\n\"no fog\".\n\n### 5. 处理重复和语义重叠\n\n如果原始negative_prompt已经包含：\n\n\"blurry, low resolution, poor quality\"\n\n可以保留这些核心限制，同时将高度重复的表达合并，使最终prompt更加有效。\n\n不要为了增加长度而堆叠大量同义词。\n\n### 6. 针对空间与逻辑关系进行约束\n\n如果visual_prompt明确描述空间关系，negative prompt应该防止这些关系被破坏。\n\n例如：\n\n\"woman in the foreground, castle in the distant background\"\n\n可以补充：\n\n\"incorrect depth ordering, castle overlapping the woman, foreground-background confusion, misplaced subjects\"\n\n不要使用模糊的表达来代替明确的视觉错误。\n\n### 7. 真实世界与知识准确性\n\n如果visual_prompt涉及历史人物、历史事件、科学设备、建筑、地标、文化物件、现实产品或其他具有明确视觉特征的对象，你必须理解其正确视觉属性，并针对常见错误加入negative constraints。\n\n例如visual_prompt要求：\n\n\"1940 Dunkirk evacuation\"\n\n应考虑排除：\n\n\"modern military uniforms, modern vehicles, modern ships, contemporary equipment, modern buildings\"\n\n而不是只使用通用质量词。\n\n### 8. 文字渲染\n\n如果visual_prompt包含准确文字，必须特别保护文字内容。\n\nvisual_prompt中的：\n\n\"E = mc²\"\n\n可以产生针对性的negative prompt：\n\n\"misspelled formula, incorrect mathematical symbols, missing superscript ², extra characters, gibberish text, illegible equation, distorted typography\"\n\n如果visual_prompt没有要求文字，不要无意义地加入大量文字相关限制，除非原始negative_prompt中已经明确包含这些限制。\n\n### 9. 风格一致性\n\nNegative prompt必须根据visual_prompt的目标风格调整。\n\n如果visual_prompt要求photorealistic，可以排除：\n\n\"cartoon, anime, illustration, plastic CGI appearance, artificial 3D rendering\"\n\n如果visual_prompt要求anime，则不应该机械加入：\n\n\"anime, illustration\"\n\n作为negative prompt。\n\n应该排除与目标anime风格相反的问题，例如：\n\n\"photorealistic skin texture, photographic artifacts, realistic human pores\"\n\n### 10. 技术质量控制\n\n在完成visual-specific分析后，可以保留或补充适用于大多数图像生成任务的基础质量限制，例如：\n\n\"blur, severe noise, compression artifacts, pixelation, low resolution, distorted anatomy, malformed details\"\n\n但技术质量词必须服务于画面，而不是让negative prompt变成无意义的关键词堆积。\n\n## 输出要求\n\n最终negative prompt必须是一个**英文的、连贯自然的单段落prompt**，可以直接复制到图像生成模型的negative prompt输入框。\n\n它应该：\n\n- 保留原始negative_prompt中的有效元素.\n- 根据visual_prompt动态增加针对性限制.\n- 删除或合并明显重复的内容.\n- 避免与visual_prompt直接冲突.\n- 优先排除最可能破坏当前画面的错误.\n- 包含主体、构图、动作、环境、风格、技术质量和文字等相关限制（仅在相关时加入）.\n- 不需要解释每个negative term.\n- 不包含分类标题.\n- 不包含JSON之外的额外文本.\n- 不使用无意义的关键词堆积.\n- 使用自然、清晰、模型容易理解的英文描述.\n- 通常控制在80-220词；简单画面可以更短，复杂画面可以更长.\n\n## 输入\n\n你将收到两个字段：\n\n- **visual_prompt**: 已经生成或准备使用的正向视觉prompt.\n- **negative_prompt**: 用户原始negative prompt，可以为空.\n\n如果negative_prompt为空，则根据visual_prompt生成一个完整的、针对当前画面的negative prompt。\n\n如果visual_prompt为空，则尽可能保留并优化原始negative_prompt，不进行无法依据视觉内容完成的针对性扩展。\n\n## 执行步骤\n\n1. **Analyze**: 分析visual_prompt中的Subject、Composition、Action、Location、Image style、Specs和Text rendering，并识别当前画面最可能出现的生成错误.\n2. **Preserve**: 提取negative_prompt中的所有有效限制，确保核心元素不会无理由丢失.\n3. **Resolve**: 检查原始negative_prompt与visual_prompt之间是否存在冲突、重复或语义重叠，并进行合理调整.\n4. **Enhance**: 根据visual_prompt补充具体、针对性的negative constraints，优先处理主体、空间关系、解剖结构、物理逻辑、风格一致性和文字准确性.\n5. **Rewrite**: 将所有negative constraints整合成一个自然、明确、可直接用于图像生成的英文单段落negative prompt.\n\n## 输出格式\n\n只输出JSON，不加任何其他文字：\n\n{\n  \"prompt\": \"enhanced English negative prompt as one coherent paragraph\",\n  \"reasoning\": \"用用户输入的提示词语言解释你如何分析visual_prompt、保留原始negative_prompt并决定新增哪些针对性negative constraints\",\n  \"resolved_knowledge\": \"用用户输入的提示词语言简述你从visual_prompt中解析出的关键视觉知识，以及这些知识如何影响negative prompt；如果没有需要解析的隐含知识则写'无'\"\n}\n<|turn|>"
+    },
+    "class_type": "PrimitiveStringMultiline",
+    "_meta": {
+      "title": "REWRITE_SYSTEM_PROMPT"
+    }
+  },
+  "282:284": {
+    "inputs": {
+      "string_a": [
+        "282:283",
+        0
+      ],
+      "string_b": [
+        "282:288",
+        0
+      ],
+      "delimiter": ""
+    },
+    "class_type": "StringConcatenate",
+    "_meta": {
+      "title": "Concatenate Text"
+    }
+  },
+  "282:289": {
+    "inputs": {
+      "clip_name": "gemma4_e4b_it_fp8_scaled.safetensors",
+      "type": "stable_diffusion",
+      "device": "default"
+    },
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "Load CLIP"
+    }
+  },
+  "282:293": {
+    "inputs": {
+      "string": [
+        "282:292",
+        0
+      ],
+      "regex_pattern": "\\n?```\\s*$",
+      "replace": "",
+      "case_insensitive": false,
+      "multiline": false,
+      "dotall": false,
+      "count": 1
+    },
+    "class_type": "RegexReplace",
+    "_meta": {
+      "title": "Replace Text (Regex)"
+    }
+  },
+  "282:296": {
+    "inputs": {
+      "json_string": [
+        "282:293",
+        0
+      ],
+      "key": "prompt"
+    },
+    "class_type": "JsonExtractString",
+    "_meta": {
+      "title": "Extract Text from JSON"
+    }
+  },
+  "282:292": {
+    "inputs": {
+      "string": [
+        "282:290",
+        0
+      ],
+      "regex_pattern": "^```(?:json)?\\s*\\n?",
+      "replace": "",
+      "case_insensitive": false,
+      "multiline": false,
+      "dotall": false,
+      "count": 1
+    },
+    "class_type": "RegexReplace",
+    "_meta": {
+      "title": "Replace Text (Regex)"
+    }
+  },
+  "282:290": {
+    "inputs": {
+      "prompt": [
+        "282:284",
+        0
+      ],
+      "max_length": 2048,
+      "sampling_mode": "on",
+      "sampling_mode.temperature": 0.7,
+      "sampling_mode.top_k": 64,
+      "sampling_mode.top_p": 0.95,
+      "sampling_mode.min_p": 0.05,
+      "sampling_mode.repetition_penalty": 1.05,
+      "sampling_mode.seed": 0,
+      "sampling_mode.presence_penalty": 0,
+      "thinking": false,
+      "use_default_template": false,
+      "mtp": "auto",
+      "clip": [
+        "282:289",
+        0
+      ]
+    },
+    "class_type": "TextGenerate",
+    "_meta": {
+      "title": "Generate Text"
+    }
+  },
+  "282:286": {
+    "inputs": {
+      "string": "<|turn>user\n{visual_prompt}<|turn|>\n<|turn>model\n",
+      "find": "{visual_prompt}",
+      "replace": [
+        "258",
+        0
+      ]
+    },
+    "class_type": "StringReplace",
+    "_meta": {
+      "title": "Visual prompt"
+    }
+  },
+  "282:285": {
+    "inputs": {
+      "string": "<|turn>user\n{negative_prompt}<|turn|>\n<|turn>model\n",
+      "find": "{negative_prompt}",
+      "replace": [
+        "246",
+        0
+      ]
+    },
+    "class_type": "StringReplace",
+    "_meta": {
+      "title": "Negative Prompt"
+    }
+  },
+  "282:288": {
+    "inputs": {
+      "string_a": [
+        "282:286",
+        0
+      ],
+      "string_b": [
+        "282:285",
+        0
+      ],
+      "delimiter": ""
+    },
+    "class_type": "StringConcatenate",
+    "_meta": {
+      "title": "Concatenate Text"
+    }
+  }
+}

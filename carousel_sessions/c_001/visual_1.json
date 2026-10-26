@@ -1,0 +1,40 @@
+{
+    "positive_prompt": "medium: editorial photography         scene_description: e_01, o_01, o_02         Element Indication for scene_description:         e_01: A quiet forest with tall trees and soft natural light filtering through the canopy, creating a serene and peaceful atmosphere. change of state for the element in slide: Tall trees with soft natural light filtering through the canopy, creating a peaceful atmosphere.  o_01: A smooth, natural stone with subtle textures and patterns, placed in a natural setting. change of state for the element in slide: A smooth, natural stone placed in the center of the frame, surrounded by soft shadows.  o_02: A cluster of wildflowers with soft colors and natural arrangement, growing in a meadow or forest floor. change of state for the element in slide: A cluster of wildflowers growing at the base of the stone, with soft natural light casting long shadows.         Slide element se_01: A quiet forest with tall trees and soft natural light filtering through the canopy, creating a serene and peaceful atmosphere.  Slide element so_01: A smooth, natural stone with subtle textures and patterns, placed in a natural setting.                  Optional aesthetic to include for visual enhancement:         No optional element to select from                  Composition and stage direction:         composition:          subject_position: center         focal_point: top         text_safe_area: left         negative_space: left         subject_scale: medium         framing: tight                  shot_type: wide angle         ",
+    "negative_prompt": "blurry imagery, bad anatomy, over-complicated, cold color, harsh lighting, artificial lighting, oversaturation, digital noise, grain, low contrast, busy background, cluttered composition, urban elements, synthetic textures, plastic look, mutated, deformed, tiling, watermark, signature, text, writing, low resolution, amateur photo, distracting elements, strong vignetting",
+    "overall_visual": "camera settings: 35mm documentary photography, 50mm lens lighting: soft natural light with subtle shadows color palette: warm cream neutrals, muted charcoal, soft gray, subtle natural earthy tones mood: quiet and reflective composition interpretation: minimal, clean composition with generous negative space",
+    "image_composition": "Composition and stage direction: composition:  subject_position: center focal_point: top text_safe_area: left negative_space: left subject_scale: medium framing: tight  shot_type: wide angle",
+    "width": 768,
+    "height": 960,
+    "seed": 107779971,
+    "metadata": {
+        "carousel_id": "c_001",
+        "slide_id": 1,
+        "element": [
+            [
+                "e_01",
+                "o_01",
+                "o_02"
+            ],
+            []
+        ],
+        "element_used": [
+            "e_01: A quiet forest with tall trees and soft natural light filtering through the canopy, creating a serene and peaceful atmosphere. change of state for the element in slide: Tall trees with soft natural light filtering through the canopy, creating a peaceful atmosphere.",
+            "o_01: A smooth, natural stone with subtle textures and patterns, placed in a natural setting. change of state for the element in slide: A smooth, natural stone placed in the center of the frame, surrounded by soft shadows.",
+            "o_02: A cluster of wildflowers with soft colors and natural arrangement, growing in a meadow or forest floor. change of state for the element in slide: A cluster of wildflowers growing at the base of the stone, with soft natural light casting long shadows."
+        ],
+        "element_optional": [],
+        "slide_element": [
+            {
+                "objectID": "se_01",
+                "objectType": "environment",
+                "description": "A quiet forest with tall trees and soft natural light filtering through the canopy, creating a serene and peaceful atmosphere."
+            },
+            {
+                "objectID": "so_01",
+                "objectType": "object",
+                "description": "A smooth, natural stone with subtle textures and patterns, placed in a natural setting."
+            }
+        ],
+        "layout": "hero"
+    }
+}

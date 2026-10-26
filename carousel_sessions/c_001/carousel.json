@@ -1,0 +1,404 @@
+{
+  "title": "在自然中找回内心的平静",
+  "langauge": "zh-HK",
+  "style": "minimal_editorial",
+  "visual_bible": {
+    "element_list": [
+      {
+        "elementID": "e_01",
+        "elementType": "environment",
+        "description": "A quiet forest with tall trees and soft natural light filtering through the canopy, creating a serene and peaceful atmosphere.",
+        "persistence": "preferred"
+      },
+      {
+        "elementID": "e_02",
+        "elementType": "environment",
+        "description": "A tranquil valley surrounded by mountains, with a calm lake reflecting the sky and surrounding landscape.",
+        "persistence": "preferred"
+      },
+      {
+        "elementID": "e_03",
+        "elementType": "environment",
+        "description": "A peaceful grassland with gentle hills and a clear blue sky, with soft natural light casting long shadows.",
+        "persistence": "preferred"
+      },
+      {
+        "elementID": "e_04",
+        "elementType": "environment",
+        "description": "A quiet coastal area with smooth waves rolling onto the shore and a clear, calm sea reflecting the sky.",
+        "persistence": "preferred"
+      },
+      {
+        "elementID": "o_01",
+        "elementType": "object",
+        "description": "A smooth, natural stone with subtle textures and patterns, placed in a natural setting.",
+        "persistence": "preferred"
+      },
+      {
+        "elementID": "o_02",
+        "elementType": "object",
+        "description": "A cluster of wildflowers with soft colors and natural arrangement, growing in a meadow or forest floor.",
+        "persistence": "preferred"
+      },
+      {
+        "elementID": "o_03",
+        "elementType": "object",
+        "description": "A small, natural rock formation with unique shapes and textures, found in a stream or mountain area.",
+        "persistence": "preferred"
+      }
+    ],
+    "medium": "editorial photography",
+    "canvas_width": 768,
+    "canvas_height": 960,
+    "camera": "35mm documentary photography, 50mm lens",
+    "lighting": "soft natural light with subtle shadows",
+    "color_palette": "warm cream neutrals, muted charcoal, soft gray, subtle natural earthy tones",
+    "mood": "quiet and reflective",
+    "composition_style": "minimal, clean composition with generous negative space",
+    "negative_prompt": "blurry imagery, bad anatomy, over-complicated, cold color being the most"
+  },
+  "slides": [
+    {
+      "slide_id": 1,
+      "purpose": "hook",
+      "headline": "自然的呼吸",
+      "body": "静谧的森林",
+      "visual": {
+        "visual_role": "hero",
+        "composition": {
+          "subject_position": "center",
+          "focal_point": "top",
+          "text_safe_area": "left",
+          "negative_space": "left",
+          "subject_scale": "medium",
+          "framing": "tight"
+        },
+        "shot_type": "wide angle",
+        "scene_description": "e_01, o_01, o_02",
+        "element_usage": [
+          {
+            "element_id": "e_01",
+            "usage": "visible",
+            "selected_components": [],
+            "state_description": "Tall trees with soft natural light filtering through the canopy, creating a peaceful atmosphere."
+          },
+          {
+            "element_id": "o_01",
+            "usage": "visible",
+            "selected_components": [],
+            "state_description": "A smooth, natural stone placed in the center of the frame, surrounded by soft shadows."
+          },
+          {
+            "element_id": "o_02",
+            "usage": "visible",
+            "selected_components": [],
+            "state_description": "A cluster of wildflowers growing at the base of the stone, with soft natural light casting long shadows."
+          }
+        ],
+        "slide_elements": [
+          {
+            "objectID": "se_01",
+            "objectType": "environment",
+            "description": "A quiet forest with tall trees and soft natural light filtering through the canopy, creating a serene and peaceful atmosphere."
+          },
+          {
+            "objectID": "so_01",
+            "objectType": "object",
+            "description": "A smooth, natural stone with subtle textures and patterns, placed in a natural setting."
+          }
+        ],
+        "used_element_ids": [
+          "e_01",
+          "o_01",
+          "o_02"
+        ],
+        "get_visible_element_usage": [
+          "e_01",
+          "o_01",
+          "o_02"
+        ],
+        "get_optional_element_usage": [],
+        "get_used_element_ids_with_components": [],
+        "used_permanent_element_ids": [
+          "e_01",
+          "o_01",
+          "o_02"
+        ],
+        "used_slide_element_ids": []
+      },
+      "layout": "hero",
+      "semantic_qa_target": "A smooth, natural stone surrounded by wildflowers in a quiet forest with soft natural light filtering through the trees.",
+      "image_path": "D:\\ProgramData\\ARCArticleGeneration\\carousel_sessions\\c_001\\slideImage_01.png"
+    },
+    {
+      "slide_id": 2,
+      "purpose": "breath",
+      "headline": "山谷的低语",
+      "body": "湖面的倒影",
+      "visual": {
+        "visual_role": "slide",
+        "composition": {
+          "subject_position": "left",
+          "focal_point": "center",
+          "text_safe_area": "top",
+          "negative_space": "right",
+          "subject_scale": "medium",
+          "framing": "tight"
+        },
+        "shot_type": "wide-angle",
+        "scene_description": "e_02, o_03",
+        "element_usage": [
+          {
+            "element_id": "e_02",
+            "usage": "visible",
+            "selected_components": [],
+            "state_description": "Dominant on the left side, with mountains extending upward"
+          },
+          {
+            "element_id": "o_03",
+            "usage": "visible",
+            "selected_components": [],
+            "state_description": "Positioned on the right side, with subtle textures and natural patterns"
+          }
+        ],
+        "slide_elements": [
+          {
+            "objectID": "se_02",
+            "objectType": "environment",
+            "description": "A tranquil valley surrounded by mountains, with a calm lake reflecting the sky and surrounding landscape."
+          },
+          {
+            "objectID": "so_02",
+            "objectType": "object",
+            "description": "A small, natural rock formation with unique shapes and textures, found in a stream or mountain area."
+          }
+        ],
+        "used_element_ids": [
+          "e_02",
+          "o_03"
+        ],
+        "get_visible_element_usage": [
+          "e_02",
+          "o_03"
+        ],
+        "get_optional_element_usage": [],
+        "get_used_element_ids_with_components": [],
+        "used_permanent_element_ids": [
+          "e_02",
+          "o_03"
+        ],
+        "used_slide_element_ids": []
+      },
+      "layout": "image_full",
+      "semantic_qa_target": "A tranquil valley surrounded by mountains with a calm lake reflecting the sky, featuring a small natural rock formation in the landscape.",
+      "image_path": "D:\\ProgramData\\ARCArticleGeneration\\carousel_sessions\\c_001\\slideImage_02.png"
+    },
+    {
+      "slide_id": 3,
+      "purpose": "context",
+      "headline": "草地上的宁静",
+      "body": "风的低语",
+      "visual": {
+        "visual_role": "statement",
+        "composition": {
+          "subject_position": "right_third",
+          "focal_point": "bottom",
+          "text_safe_area": "left",
+          "negative_space": "left",
+          "subject_scale": "medium",
+          "framing": "medium"
+        },
+        "shot_type": "low angle",
+        "scene_description": "e_03, o_01, o_02",
+        "element_usage": [
+          {
+            "element_id": "e_03",
+            "usage": "visible",
+            "selected_components": [],
+            "state_description": "A peaceful grassland with gentle hills and a clear blue sky, with soft natural light casting long shadows."
+          },
+          {
+            "element_id": "o_01",
+            "usage": "visible",
+            "selected_components": [],
+            "state_description": "A smooth, natural stone placed in the center of the frame, surrounded by soft shadows."
+          },
+          {
+            "element_id": "o_02",
+            "usage": "visible",
+            "selected_components": [],
+            "state_description": "A cluster of wildflowers growing at the base of the stone, with soft natural light casting long shadows."
+          }
+        ],
+        "slide_elements": [
+          {
+            "objectID": "se_03",
+            "objectType": "environment",
+            "description": "A peaceful grassland with gentle hills and a clear blue sky, with soft natural light casting long shadows."
+          },
+          {
+            "objectID": "so_03",
+            "objectType": "object",
+            "description": "A smooth, natural stone with subtle textures and patterns, placed in a natural setting."
+          }
+        ],
+        "used_element_ids": [
+          "e_03",
+          "o_01",
+          "o_02"
+        ],
+        "get_visible_element_usage": [
+          "e_03",
+          "o_01",
+          "o_02"
+        ],
+        "get_optional_element_usage": [],
+        "get_used_element_ids_with_components": [],
+        "used_permanent_element_ids": [
+          "e_03",
+          "o_01",
+          "o_02"
+        ],
+        "used_slide_element_ids": []
+      },
+      "layout": "split",
+      "semantic_qa_target": "A smooth, natural stone surrounded by wildflowers in a peaceful grassland with gentle hills and a clear blue sky.",
+      "image_path": "D:\\ProgramData\\ARCArticleGeneration\\carousel_sessions\\c_001\\slideImage_03.png"
+    },
+    {
+      "slide_id": 4,
+      "purpose": "context",
+      "headline": "海岸的呼吸",
+      "body": "海浪的节奏",
+      "visual": {
+        "visual_role": "slide",
+        "composition": {
+          "subject_position": "left",
+          "focal_point": "center",
+          "text_safe_area": "top",
+          "negative_space": "right",
+          "subject_scale": "medium",
+          "framing": "documentary"
+        },
+        "shot_type": "wide-angle",
+        "scene_description": "e_04, o_03",
+        "element_usage": [
+          {
+            "element_id": "e_04",
+            "usage": "visible",
+            "selected_components": [],
+            "state_description": "Dominant on the left side, with waves extending upward"
+          },
+          {
+            "element_id": "o_03",
+            "usage": "visible",
+            "selected_components": [],
+            "state_description": "Positioned on the right side, with unique shapes extending toward the water"
+          }
+        ],
+        "slide_elements": [
+          {
+            "objectID": "se_04",
+            "objectType": "environment",
+            "description": "A quiet coastal area with smooth waves rolling onto the shore and a clear, calm sea reflecting the sky."
+          },
+          {
+            "objectID": "so_04",
+            "objectType": "object",
+            "description": "A small, natural rock formation with unique shapes and textures, found in a stream or mountain area."
+          }
+        ],
+        "used_element_ids": [
+          "e_04",
+          "o_03"
+        ],
+        "get_visible_element_usage": [
+          "e_04",
+          "o_03"
+        ],
+        "get_optional_element_usage": [],
+        "get_used_element_ids_with_components": [],
+        "used_permanent_element_ids": [
+          "e_04",
+          "o_03"
+        ],
+        "used_slide_element_ids": []
+      },
+      "layout": "split",
+      "semantic_qa_target": "A quiet coastal area with smooth waves rolling onto the shore, featuring a small natural rock formation near the water's edge.",
+      "image_path": "D:\\ProgramData\\ARCArticleGeneration\\carousel_sessions\\c_001\\slideImage_04.png"
+    },
+    {
+      "slide_id": 5,
+      "purpose": "context",
+      "headline": "自然的低语",
+      "body": "宁静的回响",
+      "visual": {
+        "visual_role": "ending",
+        "composition": {
+          "subject_position": "left_third",
+          "focal_point": "bottom",
+          "text_safe_area": "left",
+          "negative_space": "left",
+          "subject_scale": "medium",
+          "framing": "medium"
+        },
+        "shot_type": "medium angle",
+        "scene_description": "e_02, o_01, o_02",
+        "element_usage": [
+          {
+            "element_id": "e_02",
+            "usage": "visible",
+            "selected_components": [],
+            "state_description": "A tranquil valley surrounded by mountains, with a calm lake reflecting the sky and surrounding landscape."
+          },
+          {
+            "element_id": "o_01",
+            "usage": "visible",
+            "selected_components": [],
+            "state_description": "A smooth, natural stone placed in the center of the frame, surrounded by soft shadows."
+          },
+          {
+            "element_id": "o_02",
+            "usage": "visible",
+            "selected_components": [],
+            "state_description": "A cluster of wildflowers growing at the base of the stone, with soft natural light casting long shadows."
+          }
+        ],
+        "slide_elements": [
+          {
+            "objectID": "se_05",
+            "objectType": "environment",
+            "description": "A tranquil valley surrounded by mountains, with a calm lake reflecting the sky and surrounding landscape."
+          },
+          {
+            "objectID": "so_05",
+            "objectType": "object",
+            "description": "A smooth, natural stone with subtle textures and patterns, placed in a natural setting."
+          }
+        ],
+        "used_element_ids": [
+          "e_02",
+          "o_01",
+          "o_02"
+        ],
+        "get_visible_element_usage": [
+          "e_02",
+          "o_01",
+          "o_02"
+        ],
+        "get_optional_element_usage": [],
+        "get_used_element_ids_with_components": [],
+        "used_permanent_element_ids": [
+          "e_02",
+          "o_01",
+          "o_02"
+        ],
+        "used_slide_element_ids": []
+      },
+      "layout": "split",
+      "semantic_qa_target": "A smooth, natural stone surrounded by wildflowers in a tranquil valley with a calm lake reflecting the sky.",
+      "image_path": "D:\\ProgramData\\ARCArticleGeneration\\carousel_sessions\\c_001\\slideImage_05.png"
+    }
+  ]
+}
