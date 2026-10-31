@@ -309,6 +309,7 @@ async def visual_qa(style, carousel, carousel_id, carousel_folder, repair_engine
                     with open(visual_qa_file, "r", encoding="utf-8") as f:
                         data = json.load(f)
 
+                    index_no = int(visual_qa_file.stem.split("Consistency")[1])
                     penalty = 0
                     for issue in data.get("issues", []):
                         details = issue.get("details", {})
@@ -317,13 +318,12 @@ async def visual_qa(style, carousel, carousel_id, carousel_folder, repair_engine
                             penalty += len(slide_ids)
                         else:
                             penalty += 1
-                    penalty_score.append(penalty)
+                    penalty_score.append((index_no, penalty))
 
                 if not penalty_score:
                     return QAStatus.FAIL
 
-                min_penalty_score = min(penalty_score)
-                min_index = penalty_score.index(min_penalty_score)
+                min_index = min(penalty_score, key=lambda x: x[1])[0]
 
                 best_carousel = status_refresh.trace_back_carousel(
                     carousel_path=carousel_folder,
