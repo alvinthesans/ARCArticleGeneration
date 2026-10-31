@@ -43,6 +43,8 @@ class RefreshStatus:
         for path in to_remove:
             path.unlink(missing_ok=True)
 
+        self.refresh_comfyui_output(carousel_id)
+
         for slide in curr_carrousel["slides"]:
             curr_path = Path(slide["image_path"])
 
@@ -80,8 +82,6 @@ class RefreshStatus:
 
         if selected_report.name != "VisualConsistency.json":
             selected_report.rename(visual_status / "VisualConsistency.json")
-
-        self.refresh_comfyui_output(carousel_id)
 
         carousel_list.remove(previous_carousel)
 
