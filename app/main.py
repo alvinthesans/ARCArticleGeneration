@@ -322,13 +322,13 @@ async def visual_qa(style, carousel, carousel_id, carousel_folder, repair_engine
                 if not penalty_score:
                     return QAStatus.FAIL
 
-                max_penalty_score = max(penalty_score)
-                max_index = penalty_score.index(max_penalty_score)
+                min_penalty_score = min(penalty_score)
+                min_index = penalty_score.index(min_penalty_score)
 
                 best_carousel = status_refresh.trace_back_carousel(
                     carousel_path=carousel_folder,
                     carousel_id=carousel_id,
-                    retrace_no=max_index,
+                    retrace_no=min_index,
                 )
 
                 if best_carousel is None:
