@@ -107,3 +107,5 @@ class TextAdapter:
                     typography=design.body.model_copy(deep=True)
                 )
             ])
+
+        return text_specs
