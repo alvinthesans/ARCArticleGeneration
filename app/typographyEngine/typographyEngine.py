@@ -1,3 +1,5 @@
+import json
+
 from app.core.Style_Loader import StyleLoader
 from app.data_models.container_class import Carousel
 from app.data_models.written_content import Language
@@ -109,3 +111,14 @@ class TextAdapter:
             ])
 
         return text_specs
+
+
+if __name__ == "__main__":
+    text_adapter = TextAdapter(style_loader=StyleLoader())
+    with open("../../carousel_sessions/c_001/carousel.json", "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    carousel = Carousel.model_validate(data)
+
+    text_object = text_adapter.create_text_objects(carousel)
+    print(text_object)
