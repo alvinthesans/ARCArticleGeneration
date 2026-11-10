@@ -12,7 +12,7 @@ class TextAdapter:
         self.curr_style_used = None
         self.curr_design_system = None
 
-    def getTypography(self, typography: StyleTypography, color_style):
+    def getTypography(self, typography: StyleTypography, color_style) -> tuple[TextTypography, TextTypography]:
 
         curr_main_text_style = typography
 
