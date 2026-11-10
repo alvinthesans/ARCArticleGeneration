@@ -67,6 +67,8 @@ Text must:
 - progress logically
 - remain easy to understand
 
+Before you finalize the text, ask yourself, with the audience be hooked and willing to read?
+
 ==================================================
 VISUAL SYSTEM
 ==================================================
