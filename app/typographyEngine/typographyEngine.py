@@ -1,7 +1,7 @@
 from app.core.Style_Loader import StyleLoader
 from app.data_models.container_class import Carousel
 from app.data_models.written_content import Language
-from app.typographyEngine.text_data_models import DesignSystem
+from app.typographyEngine.text_data_models import DesignSystem, TextSpec
 from app.data_models.style_class import TypographyStyle as StyleTypography
 from app.typographyEngine.text_data_models import TypographyStyle as TextTypography
 
@@ -75,14 +75,35 @@ class TextAdapter:
 
         return curr_design_system
 
-    def create_text_objects(self, carousel: Carousel):
+    def create_text_objects(self, carousel: Carousel) -> list[TextSpec]:
         style_name = carousel.style
         language_selected = carousel.language
 
-        if (style_name, language_selected) != self.curr_style_used:
-            self.curr_style_used = (style_name, language_selected)
-            self.curr_design_system = self.get_style(self.curr_style_used, language_selected)
+        style_key = (style_name, language_selected)
 
+        if style_key != self.curr_style_used:
+            self.curr_design_system = self.get_style(style_key, language_selected)
+            self.curr_style_used = style_key
 
+        design = self.curr_design_system
+        text_specs = []
 
-
+        for slide in carousel.slides:
+            text_specs.extend([
+                TextSpec(
+                    id=f"slide_{slide.slide_id}_headline",
+                    slide_id=slide.slide_id,
+                    content=slide.headline,
+                    role="headline",
+                    language=language_selected,
+                    typography=design.headline.model_copy(deep=True)
+                ),
+                TextSpec(
+                    id=f"slide_{slide.slide_id}_body",
+                    slide_id=slide.slide_id,
+                    content=slide.body,
+                    role="body",
+                    language=language_selected,
+                    typography=design.body.model_copy(deep=True)
+                )
+            ])

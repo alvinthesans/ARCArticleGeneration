@@ -54,7 +54,7 @@ class ElementIDAllocator:
 
 class Carousel(BaseModel):
     title: str
-    langauge: Language
+    langauge: Language | list[Language]
     style: str
 
     visual_bible: VisualBible

@@ -1,3 +1,5 @@
+from typing import Literal
+
 from pydantic import BaseModel
 
 from app.data_models.written_content import Language
@@ -37,3 +39,13 @@ class DesignSystem(BaseModel):
 
     headline: TypographyStyle | dict[Language ,TypographyStyle]
     body: TypographyStyle | dict[Language ,TypographyStyle]
+
+class TextSpec(BaseModel):
+    id: str
+    slide_id: int
+
+    content: str
+    role: Literal["headline", "body"]
+    language: Language
+
+    typography: TypographyStyle
