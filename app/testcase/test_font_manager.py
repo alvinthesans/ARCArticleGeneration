@@ -1,5 +1,5 @@
 """
-python -m unittest discover -s testcase -p test_font_manager.py -v
+python -m unittest discover -s app/testcase -p test_font_manager.py -v
 """
 
 import sys
@@ -10,7 +10,7 @@ from PyQt6.QtGui import QGuiApplication
 from app.typographyEngine.FontManager import FontManager
 
 
-FONT_DIR = (Path(__file__).resolve().parents[1] / "app" / "typographyEngine" / "custom_fonts")
+FONT_DIR = (Path(__file__).resolve().parents[1] / "typographyEngine" / "custom_fonts")
 
 class FontManagerTests(unittest.TestCase):
     @classmethod
