@@ -20,7 +20,7 @@ class FontManagerTests(unittest.TestCase):
         cls.fonts = cls.manager.register_directory()
         if not cls.fonts:
             raise AssertionError(f"No fonts found in {FONT_DIR}")
-        cls.record = cls.fonts[0]
+        cls.record = cls.fonts[12]
 
     def test_metadata(self):
         info = self.manager.inspect_font(self.record.path)
@@ -36,7 +36,7 @@ class FontManagerTests(unittest.TestCase):
         self.assertTrue(self.manager.supports_text(self.record.font_id, "\n"))
         self.assertFalse(self.manager.supports_text(self.record.font_id, "\U0010ffff"))
         print("Traditional Chinese missing characters:",
-              self.manager.missing_characters(self.record.font_id, "慢下来，才能看见生活"))
+              self.manager.missing_characters(self.record.font_id, "自然的呼吸"))
 
     def test_qfont(self):
         family = self.record.families[0]
