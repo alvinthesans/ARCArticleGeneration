@@ -1,4 +1,4 @@
-from PyQt6.QtGui import QGuiApplication
+from PyQt6.QtGui import QGuiApplication, QFontInfo
 
 from app.core.Style_Loader import StyleLoader
 from app.data_models.written_content import Language
@@ -40,3 +40,37 @@ print("Width:", result.width)
 print("Height:", result.height)
 print("Lines:", result.line_count)
 print("Line widths:", result.line_widths)
+
+layout = result.layout
+font_info = QFontInfo(layout.font())
+
+print("Font:", font_info.family())
+print("Weight:", font_info.weight())
+print("Pixel size:", font_info.pixelSize())
+print()
+
+for i in range(layout.lineCount()):
+    line = layout.lineAt(i)
+
+    start = line.textStart()
+    end = start + line.textLength()
+    content = layout.text()[start:end]
+
+    print(f"Line {i + 1}")
+    print("Text:", repr(content))
+    print("Width:", line.naturalTextWidth())
+    print("Height:", line.height())
+    print("Ascent:", line.ascent())
+    print("Descent:", line.descent())
+    print("Y position:", line.position().y())
+    print()
+
+for width in [300, 450, 608, 700, 1000]:
+    measured = measure_text(spec, available_width=width, font_manager=font_manager)
+
+    print(
+        f"Width limit: {width}, "
+        f"Lines: {measured.line_count}, "
+        f"Text height: {measured.height:.2f}, "
+        f"Actual width: {measured.width:.2f}"
+    )

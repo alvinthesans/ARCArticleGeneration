@@ -18,15 +18,12 @@ def measure_text(spec: TextSpec, available_width: float,font_manager: FontManage
     if "\n" in spec.content:
         raise ValueError("Explicit line breaks not yet supported")
 
-    languages_used = [lang for lang in spec.language]
-    font = font_manager.find_registered_font(style.font_family, weight=400)
-    font_manager.add_alias(
-        "Chocolate Classical Sans",
-        font.families[0]
-    )
+    languages_used = [lang for lang in spec.language] if isinstance(spec.language, list) else spec.language
+
+    record = font_manager.find_registered_font(family=style.font_family, weight=style.weight)
 
     font = font_manager.resolve_registered_font(
-        font_id=font.font_id,
+        font_id=record.font_id,
         weight=style.weight,
         pixel_size=round(style.font_size),
         text=spec.content,
