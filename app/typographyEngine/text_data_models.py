@@ -1,5 +1,7 @@
+from dataclasses import dataclass, field
 from typing import Literal
 
+from PyQt6.QtGui import QTextLayout
 from pydantic import BaseModel
 
 from app.data_models.written_content import Language
@@ -46,6 +48,17 @@ class TextSpec(BaseModel):
 
     content: str
     role: Literal["headline", "body"]
-    language: Language
+    language: Language | list[Language]
 
     typography: TypographyStyle
+
+# Real Time data classes without json serialization or validation
+@dataclass
+class MeasuredText:
+    width: float
+    height: float
+    line_count: int
+    line_widths: tuple[float, ...]
+
+    #Hide during print
+    layout: QTextLayout = field(repr=False)
